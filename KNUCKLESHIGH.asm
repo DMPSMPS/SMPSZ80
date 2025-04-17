@@ -488,6 +488,7 @@ Knuckles_High_Loop26:
 
 ; PSG3 Data
 Knuckles_High_PSG3:
+	smpsChangeTransposition	$0C
 Knuckles_High_PSG3INIT:
 	smpsPSGvoice        sTone_12
 	smpsPSGform         $E7
