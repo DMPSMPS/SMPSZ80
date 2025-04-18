@@ -196,7 +196,7 @@ Mus_THEMEOFSKALBUM_Loop59:
 	dc.b	nA2, $06, nFs2, $06, nFs2, $0C, nE2, $06, nE2, $03, nE2, $03
 	dc.b	nRst, $03, nE2, $03, nRst, $03, nE2, $03, nD2, $06, nRst, $03
 	dc.b	nD2, $03, nRst, $03, nD3, $06, nD2, $03, nD2, $03, nD2, $03
-	dc.b	nRst, $2A, nA1, $3C, nRst, $7F, nRst, $35
+	dc.b	nRst, $2A, nA1, $7F, smpsNoAttack, $1D, nRst, $54
 	smpsStop
 
 ; FM3 Data
