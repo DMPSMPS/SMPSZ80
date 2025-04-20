@@ -450,9 +450,9 @@ s3p38_Jump00:
 	smpsPan             panLeft, $00
 	dc.b	dHighTom, dHighTom, dHighTom
 	smpsPan             panCenter, $00
-	dc.b	dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3
+	dc.b	dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3, dLowTomS3, dLowTomS3
 	smpsPan             panRight, $00
-	dc.b	dLowTomS3, dLowTomS3, dFloorTomS3
+ 	dc.b	dFloorTomS3
 	dc.b	dFloorTomS3
 	smpsPan             panCenter, $00
 	smpsJump            s3p38_Jump00
