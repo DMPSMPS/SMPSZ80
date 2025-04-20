@@ -353,26 +353,11 @@ s3p38_Call03:
 
 ; DAC Data
 s3p38_DAC:
-	dc.b	dCrashCymbal, $60, dCrashCymbal, $48
-	smpsPan             panLeft, $00
-	dc.b	dElectricMidTom, $02, dElectricFloorTom, $16
-	smpsPan             panCenter, $00
-	dc.b	dCrashCymbal, $48, dSnareS3, $03
-	dc.b	dSnareS3, $15, dCrashCymbal, $18, dElectricHighTom, dKickS3
-	smpsPan             panRight, $00
- 	dc.b	dElectricFloorTom
-	smpsPan             panCenter, $00
-	dc.b	dCrashCymbal, $18, dKickS3, nRst, dKickS3
+	dc.b	dCrashCymbal, $60, dCrashCymbal, $48, dElectricMidTom, $02, dElectricFloorTom, $16, dCrashCymbal, $48, dSnareS3, $03
+	dc.b	dSnareS3, $15, dCrashCymbal, $18, dElectricHighTom, dKickS3, dElectricFloorTom, dCrashCymbal, $18, dKickS3, nRst, dKickS3
 	dc.b	nRst, dKickS3, nRst, dKickS3, dKickS3, $18, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3
-	dc.b	dKickS3, dKickS3, $0C, dSnareS3, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst
-	smpsPan             panLeft, $00
-	dc.b	dHighTom
-	dc.b	dHighTom, dHighTom
-	smpsPan             panCenter, $00
-	dc.b	dMidTomS3, dMidTomS3
-	smpsPan             panRight, $00
-	dc.b	dLowTomS3, dLowTomS3
-	smpsPan             panCenter, $00
+	dc.b	dKickS3, dKickS3, $0C, dSnareS3, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst, dHighTom
+	dc.b	dHighTom, dHighTom, dMidTomS3, dMidTomS3, dLowTomS3, dLowTomS3
 
 s3p38_Loop00:
 	dc.b	dCrashCymbal, $06, nRst, dKickS3, nRst, dSnareS3, dKickS3, nRst, dKickS3, $1E, dSnareS3, $18
@@ -385,25 +370,14 @@ s3p38_Loop00:
 	dc.b	dKickS3, $06, dKickS3, $18, dSnareS3, dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dKickS3, $18
 	dc.b	dSnareS3, $12, dKickS3, $06, dKickS3, $18, dCrashCymbal, dKickS3, dSnareS3, $12, dKickS3, $06
 	dc.b	dKickS3, $18, dSnareS3, $03, dSnareS3, $15, dKickS3, $18, dSnareS3, $12, dKickS3, $06
-	dc.b	dKickS3, $0C, dKickS3, dClapS3, $18
-	dc.b	dTightSnare, $06, dTightSnare, nRst, nRst
-	dc.b	dMidpitchSnare, dMidpitchSnare
-	dc.b	nRst, nRst, dLooseSnare, dLooseSnare, nRst, nRst
-	dc.b	dLooserSnare, dLooserSnare
-	dc.b	dKickS3, dKickS3, dCrashCymbal, $60
+	dc.b	dKickS3, $0C, dKickS3, dClapS3, $18, dTightSnare, $06, dTightSnare, nRst, nRst, dMidpitchSnare, dMidpitchSnare
+	dc.b	nRst, nRst, dLooseSnare, dLooseSnare, nRst, nRst, dLooserSnare, dLooserSnare, dKickS3, dKickS3, dCrashCymbal, $60
 	dc.b	nRst, $60, nRst, $60, nRst, $60, nRst, $06, nRst, dSnareS3, dSnareS3, nRst
 	dc.b	dSnareS3, nRst, dSnareS3, dSnareS3, dSnareS3, dSnareS3, nRst, nRst, $24, dSnareS3, $06, dSnareS3
 	dc.b	nRst, dSnareS3, nRst, dSnareS3, dCrashCymbal, $18, dCrashCymbal, nRst, $06, nRst, dSnareS3, dSnareS3
 	dc.b	nRst, dSnareS3, nRst, dSnareS3, dSnareS3, dSnareS3, dSnareS3, nRst, nRst, nRst, dSnareS3, dSnareS3
-	dc.b	nRst, dSnareS3, nRst, nRst, dCrashCymbal
-	smpsPan             panLeft, $00
-	dc.b	dHighTom, dHighTom, dHighTom
-	smpsPan             panCenter, $00
-	dc.b    dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3
-	dc.b	dLowTomS3, dLowTomS3
-	smpsPan             panRight, $00
-	dc.b	dFloorTomS3, dFloorTomS3
-	smpsPan             panCenter, $00
+	dc.b	nRst, dSnareS3, nRst, nRst, dCrashCymbal, dHighTom, dHighTom, dHighTom, dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3
+	dc.b	dLowTomS3, dLowTomS3, dFloorTomS3, dFloorTomS3
 
 s3p38_Jump00:
 	dc.b	dCrashCymbal, $06, nRst, dKickS3, nRst, dSnareS3, dKickS3, nRst, dKickS3, $1E, dSnareS3, $18
@@ -411,24 +385,12 @@ s3p38_Jump00:
 	dc.b	dKickS3, $06, nRst, dKickS3, nRst, dSnareS3, dKickS3, nRst, dKickS3, $1E, dSnareS3, $18
 	dc.b	dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dCrashCymbal, $18, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3
 	dc.b	dKickS3, dSnareS3, dKickS3, $18, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3, dKickS3
-	dc.b	$0C, dSnareS3, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst
-	smpsPan             panLeft, $00
-	dc.b	dHighTom, $04, $04
-	dc.b	$04, dHighTom, $06
-	smpsPan             panCenter, $00
-	dc.b	dMidTomS3, dMidTomS3
-	smpsPan             panRight, $00
-	dc.b	dLowTomS3, dLowTomS3
-	smpsPan             panCenter, $00
-	dc.b	dCrashCymbal, $06, nRst, dKickS3, nRst
+	dc.b	$0C, dSnareS3, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst, dHighTom, $04, $04
+	dc.b	$04, dHighTom, $06, dMidTomS3, dMidTomS3, dLowTomS3, dLowTomS3, dCrashCymbal, $06, nRst, dKickS3, nRst
 	dc.b	dSnareS3, dKickS3, nRst, dKickS3, $1E, dSnareS3, $18, dKickS3, $18, dSnareS3, dKickS3, $0C
 	dc.b	dKickS3, dSnareS3, nRst, dKickS3, $06, nRst, dKickS3, nRst, dSnareS3, dKickS3, nRst, dKickS3
-	dc.b	$1E, dSnareS3, $18, dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dMuffledSnare, $06, nRst
-	dc.b	dTightSnare
-	dc.b	nRst, dMidpitchSnare, dMidpitchSnare, nRst
-	dc.b	dLooseSnare, nRst, dLooseSnare
-	dc.b	dLooserSnare, dLooserSnare
-	dc.b	dCrashCymbal, $18, dKickS3
+	dc.b	$1E, dSnareS3, $18, dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dMuffledSnare, $06, nRst, dTightSnare
+	dc.b	nRst, dMidpitchSnare, dMidpitchSnare, nRst, dLooseSnare, nRst, dLooseSnare, dLooserSnare, dLooserSnare, dCrashCymbal, $18, dKickS3
 	dc.b	$18, dSnareS3, dKickS3, dSnareS3, dKickS3, $06, nRst, dKickS3, nRst, dSnareS3, dKickS3, nRst
 	dc.b	dKickS3, $1E, dSnareS3, $18, dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dKickS3, $18, dSnareS3
 	dc.b	$12, dKickS3, $06, dKickS3, $18, dCrashCymbal, dKickS3, dSnareS3, $12, dKickS3, $06, dKickS3
@@ -436,25 +398,14 @@ s3p38_Jump00:
 	dc.b	$18, dClapS3, dKickS3, $18, dClapS3, dKickS3, dClapS3, dKickS3, $18, dSnareS3, $12, dKickS3
 	dc.b	$06, dKickS3, $18, dCrashCymbal, dKickS3, dSnareS3, $12, dKickS3, $06, dKickS3, $18, dSnareS3
 	dc.b	$03, dSnareS3, $15, dKickS3, $18, dSnareS3, $12, dKickS3, $06, dKickS3, $0C, dKickS3
-	dc.b	dClapS3, $18
-	dc.b	dTightSnare, $06, dTightSnare, nRst, nRst
-	dc.b	dMidpitchSnare, dMidpitchSnare, nRst, nRst, dLooseSnare
-	dc.b	dLooseSnare, nRst, nRst
-	dc.b	dLooserSnare, dLooserSnare
-	dc.b	dKickS3, dKickS3, dCrashCymbal, $60, nRst, $60, nRst
+	dc.b	dClapS3, $18, dTightSnare, $06, dTightSnare, nRst, nRst, dMidpitchSnare, dMidpitchSnare, nRst, nRst, dLooseSnare
+	dc.b	dLooseSnare, nRst, nRst, dLooserSnare, dLooserSnare, dKickS3, dKickS3, dCrashCymbal, $60, nRst, $60, nRst
 	dc.b	$60, nRst, $60, nRst, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst, dSnareS3
 	dc.b	dSnareS3, dSnareS3, dSnareS3, nRst, nRst, $24, dSnareS3, $06, dSnareS3, nRst, dSnareS3, nRst
 	dc.b	dSnareS3, dCrashCymbal, $18, dCrashCymbal, nRst, $06, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst
 	dc.b	dSnareS3, dSnareS3, dSnareS3, dSnareS3, nRst, nRst, nRst, dSnareS3, dSnareS3, nRst, dSnareS3, nRst
-	dc.b	nRst, dCrashCymbal
-	smpsPan             panLeft, $00
-	dc.b	dHighTom, dHighTom, dHighTom
-	smpsPan             panCenter, $00
-	dc.b	dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3, dLowTomS3, dLowTomS3
-	smpsPan             panRight, $00
- 	dc.b	dFloorTomS3
+	dc.b	nRst, dCrashCymbal, dHighTom, dHighTom, dHighTom, dMidTomS3, dMidTomS3, dMidTomS3, dMidTomS3, dLowTomS3, dLowTomS3, dFloorTomS3
 	dc.b	dFloorTomS3
-	smpsPan             panCenter, $00
 	smpsJump            s3p38_Jump00
 
 s3p38_Voices:
