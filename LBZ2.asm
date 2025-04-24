@@ -20,13 +20,9 @@ Snd_LBZ2_Loop01:
 	dc.b	$86, $0C, dSnareS3, $09, dSnareS3, $03, $86, $03, dSnareS3, $09, dSnareS3, $0C
 	dc.b	$86, $0C, dSnareS3, $0C, $86, $0C, dSnareS3, $06, dSnareS3, $03, dSnareS3, $03
 	dc.b	$86, $0C, dSnareS3, $09, dSnareS3, $03, $86, $03, dSnareS3, $09, dSnareS3, $06
-	smpsPan             panLeft, $00
 	dc.b	dMidTomS3, $03, dMidTomS3, $03
-	smpsPan             panCenter, $00
 	dc.b	$86, $0C, dSnareS3, $06
-	smpsPan             panRight, $00
 	dc.b	dLowTomS3, $03, dLowTomS3, $03
-	smpsPan             panCenter, $00
 	dc.b	$86, $0C, dSnareS3
 
 Snd_LBZ2_Loop00:
