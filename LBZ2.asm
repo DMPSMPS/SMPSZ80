@@ -67,7 +67,7 @@ Snd_LBZ2_Loop06:
 Snd_LBZ2_FM1:
 	smpsModSet          $02, $01, $01, $02
 	smpsAlterNote       $00
-FM1INIT:
+FM1INITLBZ2:
 	smpsSetvoice        $03
 	dc.b	nA2, $05, nRst, $07, nA2, $05, nRst, $09
 	smpsSetvoice        $04
@@ -382,12 +382,12 @@ Snd_LBZ2_Loop1C:
 	dc.b	nEb3, $02, nRst, $01
 	dc.b	nEb2, $05, nRst, $01, nEb2, $05, nRst, $01, nBb2, $05
 	dc.b	nRst, $01
-	smpsJump	FM1INIT
+	smpsJump	FM1INITLBZ2
 
 ; FM5 Data
 Snd_LBZ2_FM5:
 	smpsSetvoice        $00
-FM5INIT:
+FM5INITLBZ2:
 	dc.b	nA3, $60, nA3, $60, nA3, $60, nG3, $60, nG3, $60, nG3, $60
 	dc.b	nG3, $60, nF3, $60, nD3, $60, nBb3, $60, nD3, $60, nC4, $60
 	dc.b	nEb3, $60, nEb3, $60, nEb4, $60, nBb3, $06, nA3, $0C, nC4, $06
@@ -395,14 +395,14 @@ FM5INIT:
 	dc.b	nF4, $0C, nEb3, $60, nEb3, $5A, nBb2, $06
 	smpsPan             panCenter, $00
 	smpsSetvoice        $00
-	smpsJump	FM5INIT
+	smpsJump	FM5INITLBZ2
 
 ; FM4 Data
 Snd_LBZ2_FM4:
 	smpsChangeTransposition	$F4
 	smpsChangeTransposition	$F4
 
-FM4INIT:
+FM4INITLBZ2:
 	smpsSetvoice        $01
 Mus_LBZ3SMPS_Loop13:
 	dc.b	nE4, $02, nA3, $01, nG4, $02, nA3, $01, nA4, $02, nA3, $01
@@ -516,7 +516,7 @@ Mus_LBZ3SMPS_Loop1A:
 	dc.b	nC5, $02, nEb3, $01, nAb4, $03, nEb3, $03, nC5, $02, nEb3, $01
 	dc.b	nC5, $02, nEb3, $01, nAb4, $05, nEb3, $04, nC6, $05, nEb3, $04
 	dc.b	nC6, $03, nEb3, $03, nC6, $03, nBb2, $03
-	smpsJump	FM4INIT
+	smpsJump	FM4INITLBZ2
 
 ; FM2 Data
 Snd_LBZ2_FM2:
@@ -524,7 +524,7 @@ Snd_LBZ2_FM2:
 	smpsSetvoice        $02
 	smpsAlterNote       $02
 	smpsModSet          $0F, $01, $06, $06
-FM2INIT:
+FM2INITLBZ2:
 	dc.b	nRst, $01
 	dc.b	nRst, $03, nC5, $0B, nRst, $01
 
@@ -609,7 +609,7 @@ Snd_LBZ2_Loop12:
 	dc.b	nRst, $01, nEb6, $10, nRst, $02, nBb5, $04, nRst, $02, nBb5, $16
 	dc.b	nRst, $02, nC6, $04, nRst, $02, nC6, $04, nRst, $02, nD6, $04
 	dc.b	nRst, $02, nEb6, $04, nRst, $08, nF6, $0C, nRst, $02
-	smpsJump	FM2INIT
+	smpsJump	FM2INITLBZ2
 
 ; FM3 Data
 Snd_LBZ2_FM3:
@@ -617,7 +617,7 @@ Snd_LBZ2_FM3:
 	smpsAlterNote       $FE
 	smpsSetvoice        $02
 	smpsModSet          $0F, $01, $06, $06
-FM3INIT:
+FM3INITLBZ2:
 	dc.b	nC5, $0B, nRst, $01
 Snd_LBZ2_Loop07:
 	dc.b	nG5, $08, nRst, $01, nC6, $02, nRst, $04
@@ -698,12 +698,12 @@ Snd_LBZ2_Loop0C:
 	dc.b	nRst, $01, nEb6, $10, nRst, $02, nBb5, $04, nRst, $02, nBb5, $16
 	dc.b	nRst, $02, nC6, $04, nRst, $02, nC6, $04, nRst, $02, nD6, $04
 	dc.b	nRst, $02, nEb6, $04, nRst, $08, nF6, $0C, nRst, $06
-	smpsJump	FM3INIT
+	smpsJump	FM3INITLBZ2
 
 ; PSG1 Data
 Snd_LBZ2_PSG1:
 	smpsPSGvoice        sTone_0A
-PSG1INIT:
+PSG1INITLBZ2:
 	dc.b	nRst, $06
 
 Snd_LBZ2_Loop36:
@@ -860,13 +860,13 @@ Snd_LBZ2_Loop4B:
 	dc.b	nBb0, $03, nG0, $03
 	smpsLoop            $00, $02, Snd_LBZ2_Loop4B
 	smpsPSGvoice        $00
-	smpsJump	PSG1INIT
+	smpsJump	PSG1INITLBZ2
 
 ; PSG2 Data
 Snd_LBZ2_PSG2:
 	smpsPSGvoice        sTone_0A
 	smpsAlterNote       $01
-PSG2INIT:
+PSG2INITLBZ2:
 	dc.b	nRst, $06
 Mus_LBZ2SMPS_Loop16:
 	dc.b	nG1, $01, nRst, $02, nG1, $01, nRst, $08, nG1, $01, nRst, $02
@@ -1018,13 +1018,13 @@ Mus_LBZ2SMPS_Loop2A:
 	dc.b	nBb2, $03, nG2, $03, nEb2, $03, nBb1, $03, nG1, $03, nEb1, $03
 	dc.b	nBb0, $03, nG0, $03
 	smpsLoop            $00, $02, Mus_LBZ2SMPS_Loop2A
-	smpsJump	PSG2INIT
+	smpsJump	PSG2INITLBZ2
 
 ; PSG3 Data
 Snd_LBZ2_PSG3:
 	smpsPSGvoice        sTone_02
 	smpsPSGform         $E7
-PSG3INIT:
+PSG3INITLBZ2:
 	dc.b	nMaxPSG
 
 Snd_LBZ2_Loop1D:
@@ -1052,7 +1052,7 @@ Snd_LBZ2_Loop21:
 	dc.b	$06, nMaxPSG, $03, nMaxPSG, $03
 	smpsLoop            $00, $03, Snd_LBZ2_Loop21
 	dc.b	nMaxPSG, $06, nMaxPSG, $03, nMaxPSG, $03
-	smpsJump	PSG3INIT
+	smpsJump	PSG3INITLBZ2
 
 Snd_LBZ2_Voices:
 ;	Voice $00
