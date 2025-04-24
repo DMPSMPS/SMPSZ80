@@ -29,26 +29,18 @@ Snd_LBZ1_Loop01:
 	dc.b	$0C, $86, $0C
 	smpsLoop            $00, $05, Snd_LBZ1_Loop01
 	dc.b	$86, $0C, $86, $06
-	smpsPan             panLeft, $00
 	dc.b	$97, $03, $97, $03, $97, $0C
-	smpsPan             panCenter, $00
 	dc.b	$86, $06
-	smpsPan             panRight, $00
 	dc.b	$95, $03, $95, $03, $95, $0C
-	smpsPan             panCenter, $00
 	dc.b	$87, $0C
 
 Snd_LBZ1_Loop02:
 	dc.b	$86, $0C
 	smpsLoop            $00, $0B, Snd_LBZ1_Loop02
 	dc.b	$86, $06
-	smpsPan             panLeft, $00
 	dc.b	$97, $03, $97, $03, $97, $0C
-	smpsPan             panCenter, $00
 	dc.b	$86, $06
-	smpsPan             panRight, $00
 	dc.b	$95, $03, $95, $03, $95, $0C
-	smpsPan             panCenter, $00
 	dc.b	$87, $0C
 	dc.b	dCrashCymbal
 
@@ -56,26 +48,18 @@ Snd_LBZ1_Loop03:
 	dc.b	$0C, $86, $0C
 	smpsLoop            $00, $05, Snd_LBZ1_Loop03
 	dc.b	$86, $0C, $86, $06
-	smpsPan             panLeft, $00
 	dc.b	$97, $03, $97, $03, $97, $0C
-	smpsPan             panCenter, $00
 	dc.b	$86, $06
-	smpsPan             panRight, $00
 	dc.b	$95, $03, $95, $03, $95, $0C
-	smpsPan             panCenter, $00
 	dc.b	$87, $0C, dCrashCymbal
 
 Snd_LBZ1_Loop04:
 	dc.b	$0C, $86, $0C
 	smpsLoop            $00, $06, Snd_LBZ1_Loop04
 	dc.b	$86, $0C
-	smpsPan             panLeft, $00
 	dc.b	$95, $03, $95, $03
-	smpsPan             panCenter, $00
 	dc.b	$95, $03, $95, $03, $95, $06
-	smpsPan             panRight, $00
 	dc.b	$90, $06, $90, $0C
-	smpsPan             panCenter, $00
 	dc.b	dCrashCymbal, $0C
 
 Snd_LBZ1_Loop05:
@@ -87,7 +71,6 @@ Snd_LBZ1_Loop06:
 	dc.b	$86, $0C, $87, $0C
 	smpsLoop            $00, $17, Snd_LBZ1_Loop06
 	dc.b	$86, $0C, $87, $06, $87, $06
-	smpsPan             panCenter, $00	
 	smpsJump	Snd_LBZ1_DACINIT
 
 ; FM1 Data
