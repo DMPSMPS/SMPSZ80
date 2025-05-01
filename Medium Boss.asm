@@ -5,8 +5,8 @@ Snd_MediumBoss_Header:
 	smpsHeaderTempo     $02, $00
 
 	smpsHeaderDAC       Snd_MediumBoss_DAC
-	smpsHeaderFM        Snd_MediumBoss_FM1,	$00, $08
 	smpsHeaderFM        Snd_MediumBoss_FM5,	$C2, $03
+	smpsHeaderFM        Snd_MediumBoss_FM1,	$00, $08
 	smpsHeaderFM        Snd_MediumBoss_FM2,	$0C, $0D
 	smpsHeaderFM        Snd_MediumBoss_FM3,	$00, $11
 	smpsHeaderFM        Snd_MediumBoss_FM4,	$00, $11
@@ -91,7 +91,7 @@ Snd_MediumBoss_FM1:
 	dc.b	nRst, $05, nC3, $05, nD3, $05, nF3, $05, nRst, $05, nD3, $06
 	dc.b	nG2, $4D, nG3, $05, nG2, $24, nRst, $05, nBb2, $05, nG2, $05
 	dc.b	nRst, $05, nC3, $06, nD3, $05, nF3, $05, nRst, $05, nD3, $05
-	smpsAlterVol        $02
+	smpsAlterVol        -$06
 	smpsSetvoice        $03
 	smpsAlterNote       $00
 	smpsModSet          $02, $01, $01, $02
@@ -131,8 +131,6 @@ Snd_MediumBoss_FM1:
 	dc.b	nBb2, $05, nEb3, $0B, nBb3, $05, nEb4, $05, nEb3, $05, nD3, $03
 	dc.b	nRst, $02, nD3, $0A, nE3, $06, nRst, $05, nFs3, $05, nRst, $05
 	dc.b	nFs3, $05, nRst, $52
-	smpsAlterVol	-$06
-	smpsAlterVol	-$02
 	smpsJump	Snd_MediumBoss_FM1
 
 ; FM2 Data
@@ -704,9 +702,10 @@ Snd_MediumBoss_Voices:
 	smpsVcTotalLevel    $08, $08, $0B, $18
 
 ;	Voice $03
-;	$3A
-;	$70, $76, $30, $71, 	$1F, $95, $1F, $1F, 	$0E, $0F, $05, $0C
-;	$07, $06, $06, $07, 	$2F, $4F, $1F, $5F, 	$21, $12, $28, $80
+	; $3A
+	; $70, $76, $30, $71,	$1F, $95, $1F, $1F
+	; $0E, $0F, $05, $0C,	$07, $06, $06, $07
+	; $2F, $4F, $1F, $5F,	$24, $12, $24, $80
 	smpsVcAlgorithm     $02
 	smpsVcFeedback      $07
 	smpsVcUnusedBits    $00
@@ -719,7 +718,7 @@ Snd_MediumBoss_Voices:
 	smpsVcDecayRate2    $07, $06, $06, $07
 	smpsVcDecayLevel    $05, $01, $04, $02
 	smpsVcReleaseRate   $0F, $0F, $0F, $0F
-	smpsVcTotalLevel    $00, $28, $12, $21
+	smpsVcTotalLevel    $00, $24, $12, $24
 
 ;	Voice $04
 ;	$3A
@@ -774,4 +773,3 @@ Snd_MediumBoss_Voices:
 	smpsVcDecayLevel    $01, $01, $01, $01
 	smpsVcReleaseRate   $0F, $0F, $0F, $0F
 	smpsVcTotalLevel    $06, $06, $06, $07
-
