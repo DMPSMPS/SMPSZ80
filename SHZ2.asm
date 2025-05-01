@@ -6,10 +6,10 @@ Snd_SHZ2_Header:
 
 	smpsHeaderDAC       Snd_SHZ2_DAC
 	smpsHeaderFM        Snd_SHZ2_FM1,	$00, $09
-	smpsHeaderFM        Snd_SHZ2_FM2,	$00, $13
-	smpsHeaderFM        Snd_SHZ2_FM3,	$00, $1A
-	smpsHeaderFM        Snd_SHZ2_FM4,	$00, $12
-	smpsHeaderFM        Snd_SHZ2_FM5,	$00, $19
+	smpsHeaderFM        Snd_SHZ2_FM2,	$00, $14
+	smpsHeaderFM        Snd_SHZ2_FM3,	$00, $1B
+	smpsHeaderFM        Snd_SHZ2_FM4,	$00, $13
+	smpsHeaderFM        Snd_SHZ2_FM5,	$00, $1A
 	smpsHeaderPSG       Snd_SHZ2_PSG1,	$0C, $04, $00, sTone_03
 	smpsHeaderPSG       Snd_SHZ2_PSG2,	$0C, $06, $00, sTone_03
 	smpsHeaderPSG       Snd_SHZ2_PSG3,	$0C, $00, $00, sTone_0F
