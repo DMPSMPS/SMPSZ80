@@ -7,9 +7,9 @@ Snd_MediumBoss_Header:
 	smpsHeaderDAC       Snd_MediumBoss_DAC
 	smpsHeaderFM        Snd_MediumBoss_FM5,	$C2, $03
 	smpsHeaderFM        Snd_MediumBoss_FM1,	$00, $08
-	smpsHeaderFM        Snd_MediumBoss_FM2,	$0C, $0D
-	smpsHeaderFM        Snd_MediumBoss_FM3,	$00, $11
-	smpsHeaderFM        Snd_MediumBoss_FM4,	$00, $11
+	smpsHeaderFM        Snd_MediumBoss_FM2,	$0C, $0E
+	smpsHeaderFM        Snd_MediumBoss_FM3,	$00, $12
+	smpsHeaderFM        Snd_MediumBoss_FM4,	$00, $12
 	smpsHeaderPSG       Snd_MediumBoss_PSG1,	$0C, $03, $00, sTone_11
 	smpsHeaderPSG       Snd_MediumBoss_PSG2,	$0C, $05, $00, sTone_11
 	smpsHeaderPSG       Snd_MediumBoss_PSG3,	$0C, $00, $00, sTone_0F
