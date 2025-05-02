@@ -89,6 +89,7 @@ Snd_MainMenu_FM2INIT:
 	dc.b	nRst, $03, nD5, $44, nRst, $0C
 	smpsPan             panLeft, $00
 	smpsAlterVol        $FC
+	smpsAlterVol        $0A
 	dc.b	nB5, $03, nG5, $04, nD5, $03, nB4, $03, nG4, $03, nB4, $03
 	dc.b	nB5, $03, nG5, $03, nD5, $03, nB4, $03, nG4, $03, nG5, $04
 	dc.b	nD5, $03, nB4, $03, nG4, $03, nA4, $03, nA5, $03, nFs5, $03
@@ -105,6 +106,7 @@ Snd_MainMenu_Loop04:
 	dc.b	nG5, $03, nE5, $03, nFs5, $04, nG5, $03, nA5, $09
 	smpsPan             panCenter, $00
 	smpsAlterVol        $04
+	smpsAlterVol        -$0A
 	smpsJump	Snd_MainMenu_FM2INIT
 
 
