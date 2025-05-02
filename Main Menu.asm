@@ -221,7 +221,7 @@ Snd_MainMenu_Loop0A:
 Snd_MainMenu_Loop0B:
 	dc.b	$03, nMaxPSG, $09, nMaxPSG, $0D
 	smpsLoop            $00, $03, Snd_MainMenu_Loop0B
-	dc.b	nMaxPSG, $03, nMaxPSG, $09, nMaxPSG, $03, nMaxPSG, $09, nMaxPSG, $03, nMaxPSG, $13
+	dc.b	nMaxPSG, $03, nMaxPSG, $09, nMaxPSG, $03, nMaxPSG, $09, nMaxPSG, $03, nMaxPSG, $16
 	smpsJump	Snd_MainMenu_PSG3INIT
 
 ; PSG2 Data
