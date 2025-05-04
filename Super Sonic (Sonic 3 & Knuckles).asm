@@ -10,8 +10,8 @@ Snd_Supersonic_Header:
 	smpsHeaderFM        Snd_Supersonic_FM3,	$00, $1B
 	smpsHeaderFM        Snd_Supersonic_FM4,	$00, $1D
 	smpsHeaderFM        Snd_Supersonic_FM5,	$00, $1D
-	smpsHeaderPSG       Snd_Supersonic_PSG1,	$0C, $00, $00, sTone_11
-	smpsHeaderPSG       Snd_Supersonic_PSG2,	$0C, $03, $00, sTone_11
+	smpsHeaderPSG       Snd_Supersonic_PSG1,	$0C, $03, $00, sTone_11
+	smpsHeaderPSG       Snd_Supersonic_PSG2,	$0C, $05, $00, sTone_11
 	smpsHeaderPSG       Snd_Supersonic_PSG3,	$0C, $01, $00, sTone_0F
 
 ; DAC Data
@@ -541,14 +541,12 @@ Snd_Supersonic_Loop21:
 	dc.b	nRst, $01, nB2, $05, nRst, $01, nB2, $03, nCs3, $03, nD3, $06
 	smpsModSet          $01, $01, $FD, $00
 	smpsPSGAlterVol	    $05
-	smpsPSGAlterVol	    $02
 	smpsAlterNote       $04
 	smpsPSGvoice        sTone_0A
 	dc.b	nC0, $60, nRst, $7F, nRst, $41
 	smpsModOff
 	smpsPSGvoice        sTone_11
 	smpsPSGAlterVol	    -$05
-	smpsPSGAlterVol	    -$02
 	smpsAlterNote       $00
 	dc.b	nCs3, $0C, nB2, $06, nA2, $06, nCs3, $06, nB2, $06, nA2, $06
 	dc.b	nAb2, $17, nRst, $01, nFs3, $0B
@@ -564,7 +562,6 @@ Snd_Supersonic_Loop22:
 	dc.b	nRst, $01, nB2, $05, nRst, $01, nB2, $03, nCs3, $03, nD3, $06
 	smpsModSet          $01, $01, $FD, $00
 	smpsAlterNote       $04
-	smpsPSGAlterVol	    $02
 	smpsPSGAlterVol	    $05
 	smpsPSGvoice        sTone_0A
 	dc.b	nC0, $60
@@ -572,7 +569,6 @@ Snd_Supersonic_Loop22:
 	smpsPSGvoice        sTone_11
 	smpsPSGAlterVol	    -$05
 	smpsAlterNote       $00
-	smpsPSGAlterVol	    -$02
 	smpsJump	Snd_Supersonic_PSG2
 
 ; PSG3 Data
