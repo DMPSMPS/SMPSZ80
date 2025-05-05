@@ -12,7 +12,7 @@ Snd_MainMenu_Header:
 	smpsHeaderFM        Snd_MainMenu_FM5,	$FF, $14
 	smpsHeaderPSG       Snd_MainMenu_PSG1,	$0B, $03, $00, sTone_11
 	smpsHeaderPSG       Snd_MainMenu_PSG2,	$0B, $00, $00, sTone_11
-	smpsHeaderPSG       Snd_MainMenu_PSG3,	$0C, $03, $00, sTone_0F
+	smpsHeaderPSG       Snd_MainMenu_PSG3,	$0C, $00, $00, sTone_0F
 
 ; DAC Data
 Snd_MainMenu_DAC:
