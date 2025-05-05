@@ -373,8 +373,7 @@ Snd_Supersonic_Loop04:
 	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
 	smpsSetvoice        $02
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $0A
-	smpsFMAlterVol        $0A
+	smpsFMAlterVol        $1A
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
 	dc.b	nB3, $01
@@ -441,7 +440,7 @@ Snd_Supersonic_Loop04:
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
 	dc.b	nRst, $06
-	smpsFMAlterVol        $0B
+	smpsFMAlterVol        $05
 
 Snd_Supersonic_Loop08:
 	dc.b	nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06, nRst, $06
@@ -462,8 +461,7 @@ Snd_Supersonic_Loop07:
 	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
 	smpsSetvoice        $02
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $0A
-	smpsFMAlterVol        $0A
+	smpsFMAlterVol        $1A
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
 	dc.b	nB3, $01
@@ -529,7 +527,7 @@ Snd_Supersonic_Loop07:
 	dc.b	nE5, $01
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	smpsFMAlterVol        $0B
+	smpsFMAlterVol        $05
 	smpsJump	Snd_Supersonic_FM5
 
 ; PSG1 Data
