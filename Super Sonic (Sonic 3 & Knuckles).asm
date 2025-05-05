@@ -404,29 +404,43 @@ Snd_Supersonic_Loop04:
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nA4, $01, nE4, $02
+	dc.b	nA4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $02
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nAb4, $02, nB4, $01
+	dc.b	nAb4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nAb4, $01, nA4, $02
+	dc.b	nAb4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nCs5, $01, nAb4, $02
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $01
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $02
 	smpsFMAlterVol        $FF
 	dc.b	nA4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nB4, $02, nD5, $01
+	dc.b	nB4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nA4, $02, nB4, $01
+	dc.b	nD5, $01
 	smpsFMAlterVol        $FF
-	dc.b	nCs5, $02, nE5, $01
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $02
+	smpsFMAlterVol        $FF
+	dc.b	nE5, $01
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
 	dc.b	nRst, $06
-	smpsFMAlterVol        $0E
+	smpsFMAlterVol        $15
 
 Snd_Supersonic_Loop08:
 	dc.b	nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06, nRst, $06
@@ -478,28 +492,43 @@ Snd_Supersonic_Loop07:
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nA4, $01, nE4, $02
+	dc.b	nA4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $02
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nAb4, $02, nB4, $01
+	dc.b	nAb4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
 	smpsFMAlterVol        $FF
 	dc.b	nFs4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nAb4, $01, nA4, $02
+	dc.b	nAb4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nCs5, $01, nAb4, $02
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $01
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $02
 	smpsFMAlterVol        $FF
 	dc.b	nA4, $01
 	smpsFMAlterVol        $FF
-	dc.b	nB4, $02, nD5, $01
+	dc.b	nB4, $02
 	smpsFMAlterVol        $FF
-	dc.b	nA4, $02, nB4, $01
+	dc.b	nD5, $01
 	smpsFMAlterVol        $FF
-	dc.b	nCs5, $02, nE5, $01
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $02
+	smpsFMAlterVol        $FF
+	dc.b	nE5, $01
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	smpsFMAlterVol        $0E
+	dc.b	nRst, $06
+	smpsFMAlterVol        $15
 	smpsJump	Snd_Supersonic_FM5
 
 ; PSG1 Data
