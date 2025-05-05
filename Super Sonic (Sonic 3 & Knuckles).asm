@@ -6,7 +6,7 @@ Snd_Supersonic_Header:
 
 	smpsHeaderDAC       Snd_Supersonic_DAC
 	smpsHeaderFM        Snd_Supersonic_FM1,	$00, $04
-	smpsHeaderFM        Snd_Supersonic_FM2,	$00, $14
+	smpsHeaderFM        Snd_Supersonic_FM2,	$00, $0A
 	smpsHeaderFM        Snd_Supersonic_FM3,	$00, $19
 	smpsHeaderFM        Snd_Supersonic_FM4,	$00, $13
 	smpsHeaderFM        Snd_Supersonic_FM5,	$00, $13
