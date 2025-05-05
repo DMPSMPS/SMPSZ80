@@ -447,7 +447,7 @@ Snd_Supersonic_Loop07:
 	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
 	smpsSetvoice        $02
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $1A
+	smpsFMAlterVol        $0A
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
 	dc.b	nB3, $01
