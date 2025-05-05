@@ -7,11 +7,11 @@ Snd_Supersonic_Header:
 	smpsHeaderDAC       Snd_Supersonic_DAC
 	smpsHeaderFM        Snd_Supersonic_FM1,	$00, $0E
 	smpsHeaderFM        Snd_Supersonic_FM2,	$00, $14
-	smpsHeaderFM        Snd_Supersonic_FM3,	$00, $19
+	smpsHeaderFM        Snd_Supersonic_FM3,	$00, $1B
 	smpsHeaderFM        Snd_Supersonic_FM4,	$00, $1D
 	smpsHeaderFM        Snd_Supersonic_FM5,	$00, $1D
 	smpsHeaderPSG       Snd_Supersonic_PSG1,	$0C, $00, $00, sTone_11
-	smpsHeaderPSG       Snd_Supersonic_PSG2,	$0C, $04, $00, sTone_11
+	smpsHeaderPSG       Snd_Supersonic_PSG2,	$0C, $03, $00, sTone_11
 	smpsHeaderPSG       Snd_Supersonic_PSG3,	$0C, $00, $00, sTone_0F
 
 ; DAC Data
