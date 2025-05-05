@@ -529,7 +529,6 @@ Snd_Supersonic_Loop07:
 	dc.b	nE5, $01
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	dc.b	nRst, $06
 	smpsFMAlterVol        $0B
 	smpsJump	Snd_Supersonic_FM5
 
