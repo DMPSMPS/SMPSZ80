@@ -90,7 +90,7 @@ Snd_MediumBoss_FM1:
 	dc.b	nRst, $05, nC3, $05, nD3, $05, nF3, $05, nRst, $05, nD3, $06
 	dc.b	nG2, $4D, nG3, $05, nG2, $24, nRst, $05, nBb2, $05, nG2, $05
 	dc.b	nRst, $05, nC3, $06, nD3, $05, nF3, $05, nRst, $05, nD3, $05
-	smpsAlterVol        $0F
+	smpsAlterVol        $06
 	smpsSetvoice        $03
 	dc.b	nBb2, $0A, nBb2, $06, nBb2, $0A, nBb2, $05, nBb3, $05, nBb2, $05
 	dc.b	nC3, $0B, nC3, $05, nC3, $0A, nC3, $05, nC4, $05, nC3, $05
@@ -128,7 +128,7 @@ Snd_MediumBoss_FM1:
 	dc.b	nBb2, $05, nEb3, $0B, nBb3, $05, nEb4, $05, nEb3, $05, nD3, $03
 	dc.b	nRst, $02, nD3, $0A, nE3, $06, nRst, $05, nFs3, $05, nRst, $05
 	dc.b	nFs3, $05, nRst, $52
-	smpsAlterVol       -$0F
+	smpsAlterVol       -$06
 	smpsJump	Snd_MediumBoss_FM1
 
 ; FM2 Data
