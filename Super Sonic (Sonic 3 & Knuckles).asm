@@ -374,93 +374,6 @@ Snd_Supersonic_Loop04:
 	smpsSetvoice        $02
 	smpsPan             panCenter, $00
 	smpsFMAlterVol        $0A
-	dc.b	nA3, $02
-	smpsFMAlterVol        $FF
-	dc.b	nB3, $01
-	smpsFMAlterVol        $FF
-	dc.b	nCs4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nE4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nB3, $02
-	smpsFMAlterVol        $FF
-	dc.b	nCs4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nD4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nFs4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nCs4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nD4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nE4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nAb4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nD4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nE4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nFs4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nA4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nE4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nFs4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nAb4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nB4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nFs4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nAb4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nA4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nCs5, $01
-	smpsFMAlterVol        $FF
-	dc.b	nAb4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nA4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nB4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nD5, $01
-	smpsFMAlterVol        $FF
-	dc.b	nA4, $02
-	smpsFMAlterVol        $FF
-	dc.b	nB4, $01
-	smpsFMAlterVol        $FF
-	dc.b	nCs5, $02
-	smpsFMAlterVol        $FF
-	dc.b	nE5, $01
-	smpsPan             panRight, $00
-	smpsSetvoice        $01
-	dc.b	nRst, $06
-	smpsFMAlterVol        $15
-
-Snd_Supersonic_Loop08:
-	dc.b	nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06, nRst, $06
-	dc.b	nFs4, $06, nRst, $06, nAb4, $06, nRst, $06, nAb4, $06, nRst, $06
-	dc.b	nB4, $06, nRst, $06, nB4, $06
-
-Snd_Supersonic_Loop06:
-	dc.b	nRst, $06, nA4, $06
-	smpsLoop            $00, $04, Snd_Supersonic_Loop06
-
-Snd_Supersonic_Loop07:
-	dc.b	nRst, $06, nB4, $06
-	smpsLoop            $00, $04, Snd_Supersonic_Loop07
-	dc.b	nRst, $06
-	smpsLoop            $01, $02, Snd_Supersonic_Loop08
-	dc.b	nFs4, $06, nRst, $06, nFs4, $06, nRst, $06, nAb4, $06, nRst, $06
-	dc.b	nAb4, $06, nRst, $06, nA4, $06, nRst, $06, nA4, $06, nRst, $06
-	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
-	smpsSetvoice        $02
-	smpsPan             panCenter, $00
 	smpsFMAlterVol        $0A
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
@@ -528,7 +441,96 @@ Snd_Supersonic_Loop07:
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
 	dc.b	nRst, $06
-	smpsFMAlterVol        $15
+	smpsFMAlterVol        $0B
+
+Snd_Supersonic_Loop08:
+	dc.b	nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06, nRst, $06
+	dc.b	nFs4, $06, nRst, $06, nAb4, $06, nRst, $06, nAb4, $06, nRst, $06
+	dc.b	nB4, $06, nRst, $06, nB4, $06
+
+Snd_Supersonic_Loop06:
+	dc.b	nRst, $06, nA4, $06
+	smpsLoop            $00, $04, Snd_Supersonic_Loop06
+
+Snd_Supersonic_Loop07:
+	dc.b	nRst, $06, nB4, $06
+	smpsLoop            $00, $04, Snd_Supersonic_Loop07
+	dc.b	nRst, $06
+	smpsLoop            $01, $02, Snd_Supersonic_Loop08
+	dc.b	nFs4, $06, nRst, $06, nFs4, $06, nRst, $06, nAb4, $06, nRst, $06
+	dc.b	nAb4, $06, nRst, $06, nA4, $06, nRst, $06, nA4, $06, nRst, $06
+	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
+	smpsSetvoice        $02
+	smpsPan             panCenter, $00
+	smpsFMAlterVol        $0A
+	smpsFMAlterVol        $0A
+	dc.b	nA3, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB3, $01
+	smpsFMAlterVol        $FF
+	dc.b	nCs4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nB3, $02
+	smpsFMAlterVol        $FF
+	dc.b	nCs4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nD4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nFs4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nCs4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nD4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nD4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nFs4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nA4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nE4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nFs4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nFs4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $01
+	smpsFMAlterVol        $FF
+	dc.b	nAb4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nA4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nD5, $01
+	smpsFMAlterVol        $FF
+	dc.b	nA4, $02
+	smpsFMAlterVol        $FF
+	dc.b	nB4, $01
+	smpsFMAlterVol        $FF
+	dc.b	nCs5, $02
+	smpsFMAlterVol        $FF
+	dc.b	nE5, $01
+	smpsPan             panRight, $00
+	smpsSetvoice        $01
+	dc.b	nRst, $06
+	smpsFMAlterVol        $0B
 	smpsJump	Snd_Supersonic_FM5
 
 ; PSG1 Data
