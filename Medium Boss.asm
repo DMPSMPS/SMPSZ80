@@ -6,7 +6,7 @@ Snd_MediumBoss_Header:
 
 	smpsHeaderDAC       Snd_MediumBoss_DAC
 	smpsHeaderFM        Snd_MediumBoss_FM5,	$C2, $03
-	smpsHeaderFM        Snd_MediumBoss_FM1,	$00, $08
+	smpsHeaderFM        Snd_MediumBoss_FM1,	$00, $09
 	smpsHeaderFM        Snd_MediumBoss_FM2,	$0C, $0E
 	smpsHeaderFM        Snd_MediumBoss_FM3,	$00, $12
 	smpsHeaderFM        Snd_MediumBoss_FM4,	$00, $12
@@ -86,15 +86,12 @@ Snd_MediumBoss_Loop04:
 Snd_MediumBoss_FM1:
 	smpsModSet          $07, $01, $03, $05
 	smpsSetvoice        $04
-	smpsAlterVol        $06
 	dc.b	nG2, $4D, nG3, $05, nG2, $24, nRst, $05, nBb2, $06, nG2, $05
 	dc.b	nRst, $05, nC3, $05, nD3, $05, nF3, $05, nRst, $05, nD3, $06
 	dc.b	nG2, $4D, nG3, $05, nG2, $24, nRst, $05, nBb2, $05, nG2, $05
 	dc.b	nRst, $05, nC3, $06, nD3, $05, nF3, $05, nRst, $05, nD3, $05
-	smpsAlterVol        -$06
+	smpsAlterVol        $0F
 	smpsSetvoice        $03
-	smpsAlterNote       $00
-	smpsModSet          $02, $01, $01, $02
 	dc.b	nBb2, $0A, nBb2, $06, nBb2, $0A, nBb2, $05, nBb3, $05, nBb2, $05
 	dc.b	nC3, $0B, nC3, $05, nC3, $0A, nC3, $05, nC4, $05, nC3, $05
 	dc.b	nF2, $06, nG2, $05, nRst, $05, nG2, $05, nRst, $05, nD2, $05
@@ -131,12 +128,13 @@ Snd_MediumBoss_FM1:
 	dc.b	nBb2, $05, nEb3, $0B, nBb3, $05, nEb4, $05, nEb3, $05, nD3, $03
 	dc.b	nRst, $02, nD3, $0A, nE3, $06, nRst, $05, nFs3, $05, nRst, $05
 	dc.b	nFs3, $05, nRst, $52
+	smpsAlterVol       -$0F
 	smpsJump	Snd_MediumBoss_FM1
 
 ; FM2 Data
 Snd_MediumBoss_FM2:
 	smpsSetvoice        $02
-	smpsModSet          $03, $01, $01, $05
+	smpsModSet          $07, $01, $03, $05
 	dc.b	nRst, $7F, nRst, $7F, nRst, $4B
 	dc.b	nD3, $1A, nRst, $05, nBb3, $05, nG3, $1F, nRst, $05, nBb3, $05
 	dc.b	nF3, $0B, nD3, $42, nRst, $0B, nD3, $19, nRst, $06, nBb3, $05
@@ -173,7 +171,6 @@ Snd_MediumBoss_FM3:
 	smpsPan             panRight, $00
 	smpsAlterVol        $08
 	smpsSetvoice        $01
-	smpsModSet          $0C, $01, $03, $07
 	dc.b	nF4, $0A, nF4, $05, nF4, $05, nRst, $05, nF4, $06, nRst, $05
 	dc.b	nF4, $05, nG4, $0A, nG4, $05, nG4, $05, nRst, $06, nG4, $05
 	dc.b	nRst, $05, nG4, $05, nC4, $05, nD4, $05, nRst, $05, nD4, $06
