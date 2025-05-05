@@ -106,7 +106,7 @@ Snd_Supersonic_Loop1A:
 
 ; FM2 Data
 Snd_Supersonic_FM2:
-	smpsModSet          $02, $01, $01, $02
+	smpsModSet          $07, $01, $03, $05
 	smpsSetvoice        $04
 	dc.b	nE2, $08, nRst, $01, nE2, $06, nFs2, $03, nE2, $06, nD2, $08
 	dc.b	nRst, $01, nE2, $06, nA2, $03, nB2, $06, nCs3, $08, nRst, $01
@@ -136,7 +136,7 @@ Snd_Supersonic_Loop14:
 	dc.b	nAb2, $03, nRst, $03, nA2, $03, nAb2, $06
 	smpsModSet          $01, $01, $06, $00
 	dc.b	nG2, $60
-	smpsModSet          $02, $01, $01, $02
+	smpsModSet          $07, $01, $03, $05
 
 Snd_Supersonic_Loop17:
 	dc.b	nA2, $03, nRst, $03, nA2, $03, nA2, $06, nE2, $03, nE2, $06
