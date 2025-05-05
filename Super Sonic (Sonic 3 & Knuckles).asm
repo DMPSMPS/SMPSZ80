@@ -176,7 +176,7 @@ Snd_Supersonic_FM3:
 	smpsPan             panRight, $00
 	dc.b	nFs4, $03, nAb4, $03, nA4, $03, nB4, $03
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $07
+	smpsFMAlterVol        $06
 
 Snd_Supersonic_Loop11:
 	dc.b	nA4, $0C, nFs4, $06, nE4, $06, nA4, $06, nFs4, $06, nD4, $06
@@ -194,7 +194,7 @@ Snd_Supersonic_Loop10:
 	dc.b	nCs5, $03, nD5, $03, nE5, $06, nD5, $05, nRst, $01, nD5, $05
 	dc.b	nRst, $01, nD5, $03, nE5, $03, nFs5, $06, nE4, $24, nFs4, $03
 	dc.b	nAb4, $03, nA4, $03, nCs5, $03
-	smpsFMAlterVol        -$07
+	smpsFMAlterVol        -$06
 	smpsPan             panRight, $00
 	dc.b	nE5, $03, nD5, $03, nCs5, $03, nB4, $03
 	smpsPan             panLeft, $00
@@ -204,7 +204,7 @@ Snd_Supersonic_Loop10:
 	smpsPan             panLeft, $00
 	dc.b	nA4, $03, nAb4, $03, nFs4, $03, nE4, $03
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $07
+	smpsFMAlterVol        $06
 
 Snd_Supersonic_Loop13:
 	dc.b	nA4, $0C, nFs4, $06, nE4, $06, nA4, $06, nFs4, $06, nD4, $06
@@ -222,7 +222,7 @@ Snd_Supersonic_Loop12:
 	dc.b	nCs5, $03, nD5, $03, nE5, $06, nD5, $05, nRst, $01, nD5, $05
 	dc.b	nRst, $01, nD5, $03, nE5, $03, nFs5, $06, nE4, $24, nFs4, $03
 	dc.b	nAb4, $03, nA4, $03, nCs5, $03
-	smpsFMAlterVol        -$07
+	smpsFMAlterVol        -$06
 	smpsPan             panRight, $00
 	dc.b	nE5, $03, nD5, $03, nCs5, $03, nB4, $03
 	smpsPan             panLeft, $00
