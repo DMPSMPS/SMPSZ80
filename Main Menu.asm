@@ -52,6 +52,7 @@ Snd_MainMenu_Loop01:
 
 ; FM1 Data
 Snd_MainMenu_FM1:
+	smpsModSet          $07, $01, $03, $05
 	smpsPan             panCenter, $00
 	smpsSetvoice        $00
 	dc.b	nRst, $15
