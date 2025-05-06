@@ -17,7 +17,7 @@ Snd_ICZ1_Header:
 ; FM1 Data
 Snd_ICZ1_FM1:
 	smpsSetvoice        $02
-	smpsFMAlterVol 	    $F7
+	smpsFMAlterVol 	    -$0A
 	smpsChangeTransposition $F4
 	smpsFMAlterVol      $05
 	dc.b	nF5, $06, nRst, $02, nF5, $06, nRst, nF5, $04, nF5, $06, nRst
@@ -26,7 +26,7 @@ Snd_ICZ1_FM1:
 	dc.b	nD5, $06, nRst, nD5, nRst, nD5, $04, nD5, $06, nRst
 	smpsChangeTransposition $0C
 	smpsFMAlterVol      $F8
-	smpsFMAlterVol 	    $09
+	smpsFMAlterVol 	    $0A
 
 Snd_ICZ1_Jump00:
 	smpsSetvoice        $00
@@ -40,7 +40,7 @@ Snd_ICZ1_Jump00:
 	smpsLoop            $00, $02, Snd_ICZ1_Jump00
 	smpsFMAlterVol      $03
 	smpsSetvoice        $02
-	smpsFMAlterVol 	    $F7
+	smpsFMAlterVol 	   -$0A
 	smpsChangeTransposition $E8
 	dc.b	nRst, $08, nG4, $04, nA4, nRst, nG4, nA4, nRst, nG4, nRst, $08
 	dc.b	nAb4, $03, smpsNoAttack, nA4, $0D, nG4, $04, nRst, $28, nG4, $04, nA4
@@ -59,7 +59,7 @@ Snd_ICZ1_Jump00:
 	smpsChangeTransposition $18
 	dc.b	nRst, $60, nRst, nRst, nRst, nRst, nRst, nRst, nRst
 	smpsFMAlterVol      $FD
-	smpsFMAlterVol 	    $09
+	smpsFMAlterVol 	    $0A
 	smpsJump            Snd_ICZ1_Jump00
 
 ; FM2 Data
