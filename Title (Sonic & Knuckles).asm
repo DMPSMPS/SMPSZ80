@@ -1,30 +1,30 @@
-Mus_THEMEOFSKALBUM_Header:
+Snd_THEMEOFSKALBUM_Header:
 	smpsHeaderStartSong 3
-	smpsHeaderVoice     Mus_THEMEOFSKALBUM_Voices
+	smpsHeaderVoice     Snd_THEMEOFSKALBUM_Voices
 	smpsHeaderChan      $06, $03
 	smpsHeaderTempo     $02, $00
 
-	smpsHeaderDAC       Mus_THEMEOFSKALBUM_DAC
-	smpsHeaderFM        Mus_THEMEOFSKALBUM_FM1,	$00, $15
-	smpsHeaderFM        Mus_THEMEOFSKALBUM_FM2,	$00, $1C
-	smpsHeaderFM        Mus_THEMEOFSKALBUM_FM3,	$00, $10
-	smpsHeaderFM        Mus_THEMEOFSKALBUM_FM4,	$00, $05
-	smpsHeaderFM        Mus_THEMEOFSKALBUM_FM5,	$00, $05
-	smpsHeaderPSG       Mus_THEMEOFSKALBUM_PSG1,	$0C, $05, $00, sTone_0A
-	smpsHeaderPSG       Mus_THEMEOFSKALBUM_PSG2,	$0C, $02, $00, sTone_0A
-	smpsHeaderPSG       Mus_THEMEOFSKALBUM_PSG3,	$0C, $05, $00, sTone_0A
+	smpsHeaderDAC       Snd_THEMEOFSKALBUM_DAC
+	smpsHeaderFM        Snd_THEMEOFSKALBUM_FM1,	$00, $15
+	smpsHeaderFM        Snd_THEMEOFSKALBUM_FM2,	$00, $1C
+	smpsHeaderFM        Snd_THEMEOFSKALBUM_FM3,	$00, $10
+	smpsHeaderFM        Snd_THEMEOFSKALBUM_FM4,	$00, $05
+	smpsHeaderFM        Snd_THEMEOFSKALBUM_FM5,	$00, $05
+	smpsHeaderPSG       Snd_THEMEOFSKALBUM_PSG1,	$0C, $05, $00, sTone_0A
+	smpsHeaderPSG       Snd_THEMEOFSKALBUM_PSG2,	$0C, $02, $00, sTone_0A
+	smpsHeaderPSG       Snd_THEMEOFSKALBUM_PSG3,	$0C, $05, $00, sTone_0A
 
 ; DAC Data
-Mus_THEMEOFSKALBUM_DAC:
+Snd_THEMEOFSKALBUM_DAC:
 	dc.b	$86, $03, $86, $06, $86, $09, $86, $0C, $86, $06, dSnareS3, $03
 	dc.b	dSnareS3, $09, $86, $03, $86, $06, $86, $09, dSnareS3, $0C, $86, $06
 	dc.b	dSnareS3
 
-Mus_THEMEOFSKALBUM_Loop00:
+Snd_THEMEOFSKALBUM_Loop00:
 	dc.b	$03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop00
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop00
 
-Mus_THEMEOFSKALBUM_Loop01:
+Snd_THEMEOFSKALBUM_Loop01:
 	dc.b	dCrashCymbal, $09, $86, $03, dSnareS3, $03, $86, $03, $86, $06, $86, $06
 	dc.b	$86, $06, dSnareS3, $06, $86, $06, $86, $03, $86, $06, $86, $03
 	dc.b	dSnareS3, $03, $86, $03, $86, $09, $86, $06, $86, $03, dSnareS3, $03
@@ -32,7 +32,7 @@ Mus_THEMEOFSKALBUM_Loop01:
 	dc.b	$86, $03, $86, $06, $86, $06, $86, $06, dSnareS3, $06, $86, $06
 	dc.b	$86, $03, $86, $06, $86, $03, dSnareS3, $03, $86, $03, $86, $09
 	dc.b	$86, $06, $86, $03, dSnareS3, $03, $86, $03, $86, $06
-	smpsLoop            $00, $09, Mus_THEMEOFSKALBUM_Loop01
+	smpsLoop            $00, $09, Snd_THEMEOFSKALBUM_Loop01
 	dc.b	$86, $03, $86, $06, $86, $03, dSnareS3, $03, $86, $03, $86, $06
 	dc.b	$86, $06, $86, $06, dSnareS3, $06, $86, $06, $86, $03, $86, $06
 	dc.b	$86, $03, dSnareS3, $03, $86, $03, $86, $09, $86, $06, $86, $03
@@ -42,7 +42,7 @@ Mus_THEMEOFSKALBUM_Loop01:
 	smpsStop
 
 ; FM1 Data
-Mus_THEMEOFSKALBUM_FM1:
+Snd_THEMEOFSKALBUM_FM1:
 	smpsSetvoice        $01
 	smpsAlterNote       $F6
 	dc.b	nRst, $36
@@ -53,7 +53,7 @@ Mus_THEMEOFSKALBUM_FM1:
 	smpsSetvoice        $00
 	smpsAlterNote       $00
 	smpsModSet          $14, $01, $04, $07
-Mus_THEMEOFSKALBUM_FM1INIT:
+Snd_THEMEOFSKALBUM_FM1INIT:
 	dc.b	nA4, $0C, nFs4, $06, nE4, $06, nA4, $06, nFs4, $06, nD4, $06
 	dc.b	nE4, $18, nD5, $0C
 	smpsNoteFill        $03
@@ -93,9 +93,9 @@ Mus_THEMEOFSKALBUM_FM1INIT:
 	dc.b	nE5, $08, nCs5, $08, nB4, $08, nCs5, $02, nRst, $04, nE5, $0C
 	dc.b	nE5, $06, nRst, $15, nRst, $06
 
-Mus_THEMEOFSKALBUM_Loop5D:
+Snd_THEMEOFSKALBUM_Loop5D:
 	dc.b	nB4, $02, nB4, $01, nCs5, $02, nCs5, $01, nE5, $02, nE5, $01
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop5D
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop5D
 	dc.b	nF5, $02, nF5, $01, nFs5, $06, nFs5, $0C, nFs5, $06, nE5, $0C
 	dc.b	nD5, $06, nE5, $36, nFs5, $06, nA5, $06, nRst, $06, nFs5, $0C
 	dc.b	nE5, $06, nD5, $06, nE5, $1E, nRst, $0C, nB4, $06, nCs5, $06
@@ -103,9 +103,9 @@ Mus_THEMEOFSKALBUM_Loop5D:
 	dc.b	nFs5, $24, nRst, $06, nD5, $06, nFs5, $06, nE5, $08, nCs5, $08
 	dc.b	nB4, $08, nA4, $30, nA4, $03
 
-Mus_THEMEOFSKALBUM_Loop5E:
+Snd_THEMEOFSKALBUM_Loop5E:
 	dc.b	nB4, $03, nCs5, $03, nE5, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop5E
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop5E
 	dc.b	nFs5, $03
 	dc.b	nA5, $0C, nFs5, $06, nE5, $06, nA5, $06, nFs5, $06, nD5, $06
 	dc.b	nE5, $18, nD6, $0C
@@ -127,23 +127,23 @@ Mus_THEMEOFSKALBUM_Loop5E:
 	smpsStop
 
 ; FM2 Data
-Mus_THEMEOFSKALBUM_FM2:
+Snd_THEMEOFSKALBUM_FM2:
 	smpsSetvoice        $02
 	smpsModSet          $15, $01, $06, $06
 	dc.b	nE2, $03, nE2, $03, nRst, $03, nE2, $03, nRst, $03, nE2, $03
 	dc.b	nE2, $06, nRst, $06, nE2
 
-Mus_THEMEOFSKALBUM_Loop53:
+Snd_THEMEOFSKALBUM_Loop53:
 	dc.b	$06, nE2, $03, nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop53
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop53
 	dc.b	nRst, $03, nE2, $03, nRst, $03, nE2, $03, nE2, $06, nRst, $06
 	dc.b	nE2, $06, nE2
 
-Mus_THEMEOFSKALBUM_Loop54:
+Snd_THEMEOFSKALBUM_Loop54:
 	dc.b	$03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop54
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop54
 
-Mus_THEMEOFSKALBUM_Loop55:
+Snd_THEMEOFSKALBUM_Loop55:
 	dc.b	nA2, $03, nA2, $03, nRst, $03, nA2, $03, nRst, $03, nA2, $03
 	dc.b	nA2, $06, nFs2, $06, nFs2, $0C, nE2, $06, nE2, $03, nE2, $03
 	dc.b	nRst, $03, nE2, $03, nRst, $03, nE2, $03, nD2, $06, nRst, $03
@@ -152,38 +152,38 @@ Mus_THEMEOFSKALBUM_Loop55:
 	dc.b	nA2, $06, nFs2, $06, nFs2, $0C, nG2, $06, nG2, $03, nG2, $03
 	dc.b	nRst, $03, nG2, $03, nRst, $03, nG2, $03, nE2, $06, nRst, $03
 	dc.b	nE2, $03, nRst, $03, nE3, $06, nE2, $03, nE2, $03, nE2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop55
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop55
 
-Mus_THEMEOFSKALBUM_Loop5A:
+Snd_THEMEOFSKALBUM_Loop5A:
 	dc.b	nD2, $03, nD2, $03, nRst, $03, nD2, $03, nRst, $03, nD2, $03
 	dc.b	nD2, $06, nD2, $06, nD2, $0C, nD2, $03, nE2, $03, nA2, $03
 	dc.b	nA2, $03, nRst, $03, nA2, $03, nRst, $03, nA2, $03, nA2, $06
 	dc.b	nE2, $03, nRst, $03, nE3, $06, nE2, $03, nE2, $03, nE2
 
-Mus_THEMEOFSKALBUM_Loop56:
+Snd_THEMEOFSKALBUM_Loop56:
 	dc.b	$03, nRst, $03, nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop56
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop56
 	dc.b	nRst, $03, nD2, $03, nD2, $06, nD2, $06, nD2, $0C, nD2, $03
 	dc.b	nE2, $03, nA2, $03, nA2, $03, nRst, $03, nA2, $03, nRst, $03
 	dc.b	nA2, $03, nA2, $06, nE2, $03, nRst, $03, nE3, $06, nE2
 
-Mus_THEMEOFSKALBUM_Loop57:
+Snd_THEMEOFSKALBUM_Loop57:
 	dc.b	$03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop57
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop57
 
-Mus_THEMEOFSKALBUM_Loop58:
+Snd_THEMEOFSKALBUM_Loop58:
 	dc.b	nG2, $03, nG2, $03, nRst, $03, nG2, $03, nRst, $03, nG2, $03
 	dc.b	nE2, $06, nG2, $03, nRst, $03, nG2, $0C, nD2, $03, nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop58
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop58
 	dc.b	nA2, $03, nA2, $03, nRst, $03, nA2, $03, nRst, $03, nA2, $03
 	dc.b	nFs2, $06, nA2, $03, nRst, $03, nA2, $0C, nE2, $03, nFs2, $03
 	dc.b	nA2, $03, nA2, $03, nRst, $03, nA2, $03, nRst, $03, nA2, $03
 	dc.b	nA2, $06, nE2, $06, nE3, $06, nE2
 
-Mus_THEMEOFSKALBUM_Loop59:
+Snd_THEMEOFSKALBUM_Loop59:
 	dc.b	$03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop59
-	smpsLoop            $01, $02, Mus_THEMEOFSKALBUM_Loop5A
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop59
+	smpsLoop            $01, $02, Snd_THEMEOFSKALBUM_Loop5A
 	dc.b	nA2, $03, nA2, $03, nRst, $03, nA2, $03, nRst, $03, nA2, $03
 	dc.b	nA2, $06, nFs2, $06, nFs2, $0C, nE2, $06, nE2, $03, nE2, $03
 	dc.b	nRst, $03, nE2, $03, nRst, $03, nE2, $03, nD2, $06, nRst, $03
@@ -200,7 +200,7 @@ Mus_THEMEOFSKALBUM_Loop59:
 	smpsStop
 
 ; FM3 Data
-Mus_THEMEOFSKALBUM_FM3:
+Snd_THEMEOFSKALBUM_FM3:
 	smpsSetvoice        $01
 	smpsPan             panCenter, $00
 	dc.b	nRst, $30
@@ -822,7 +822,7 @@ Mus_THEMEOFSKALBUM_FM3:
 	smpsStop
 
 ; FM4 Data
-Mus_THEMEOFSKALBUM_FM4:
+Snd_THEMEOFSKALBUM_FM4:
 	smpsPan             panRight, $00
 	smpsAlterNote       $FC
 	smpsModSet          $01, $01, $06, $00
@@ -834,11 +834,11 @@ Mus_THEMEOFSKALBUM_FM4:
 	dc.b	nRst, $30, nA3, $06, nRst, $0C, nA3, $05, nRst, $0D, nB3, $03
 	dc.b	nRst, $03, nB3, $0C, nB3, $18, nRst, $06
 
-Mus_THEMEOFSKALBUM_Loop03:
+Snd_THEMEOFSKALBUM_Loop03:
 	dc.b	nRst, $0C, nA3, $06, nRst, $0C, nFs3, $05, nRst, $07, nE3, $12, nRst
 	dc.b	$30, nA3, $06, nRst, $0C, nA3, $05, nRst, $0D, nB3, $03, nRst, $03
 	dc.b	nB3, $0C, nB3, $18, nRst, $06
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop03
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop03
 	dc.b	nRst, $0C, nA3, $06, nRst, $0C, nFs3, $05, nRst, $07, nE3, $12, nRst, $30
 	dc.b	nA3, $06, nRst, $0C, nA3, $05, nRst, $0D, nB3, $03, nRst, $03 
 	dc.b	nB3, $0C, nB3, $18
@@ -875,7 +875,7 @@ Mus_THEMEOFSKALBUM_Loop03:
 	smpsStop
 
 ; FM5 Data
-Mus_THEMEOFSKALBUM_FM5:
+Snd_THEMEOFSKALBUM_FM5:
 	smpsPan             panLeft, $00
 	smpsAlterNote       $04
 	smpsModSet          $01, $01, $06, $00
@@ -885,12 +885,12 @@ Mus_THEMEOFSKALBUM_FM5:
 	smpsAlterNote       $04
 	smpsModSet          $14, $01, $04, $06
 
-Mus_THEMEOFSKALBUM_Loop02:
+Snd_THEMEOFSKALBUM_Loop02:
 	dc.b	nRst, $0C, nA3, $06, nRst, $0C, nFs3, $05, nRst, $07, nE3, $12
 	dc.b	nRst, $30, nA3, $06, nRst, $0C, nFs3, $05, nRst, $0D, nG3, $03
 	dc.b	nRst, $03, nG3, $0C, nE3, $18, nRst, $06
 	smpsPan             panLeft, $00
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop02
+	smpsLoop            $00, $03, Snd_THEMEOFSKALBUM_Loop02
 	dc.b	nRst, $0C, nA3, $06, nRst, $0C, nFs3, $05, nRst, $07, nE3, $12, nRst, $30
 	dc.b	nA3, $06, nRst, $0C, nFs3, $05, nRst, $0D, nG3, $03, nRst, $03
 	dc.b	nG3, $0C, nE3, $18
@@ -929,7 +929,7 @@ Mus_THEMEOFSKALBUM_Loop02:
 	smpsStop
 
 ; PSG1 Data
-Mus_THEMEOFSKALBUM_PSG1:
+Snd_THEMEOFSKALBUM_PSG1:
 	smpsPSGvoice        sTone_0A
 	dc.b	nRst, $30, nA0, $03, nCs1, $03, nB0, $03, nD1, $03
 	smpsPSGAlterVol     $FF
@@ -941,55 +941,55 @@ Mus_THEMEOFSKALBUM_PSG1:
 	smpsModSet          $00, $00, $00, $00
 	smpsPSGAlterVol     $03
 
-Mus_THEMEOFSKALBUM_Loop6A:
+Snd_THEMEOFSKALBUM_Loop6A:
 	dc.b	nE2, $06, nB1, $06
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop6A
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop6A
 	dc.b	nD2, $06
 
-Mus_THEMEOFSKALBUM_Loop6B:
+Snd_THEMEOFSKALBUM_Loop6B:
 	dc.b	nB1, $06, nE2, $06
-	smpsLoop            $00, $07, Mus_THEMEOFSKALBUM_Loop6B
+	smpsLoop            $00, $07, Snd_THEMEOFSKALBUM_Loop6B
 	dc.b	nB1, $06, nD2, $06, nB1, $06, nD2, $06, nB1, $06, nD3, $06
 	dc.b	nB2, $06, nD3, $06, nB2, $06
-	smpsLoop            $01, $04, Mus_THEMEOFSKALBUM_Loop6A
+	smpsLoop            $01, $04, Snd_THEMEOFSKALBUM_Loop6A
 
-Mus_THEMEOFSKALBUM_Loop6C:
+Snd_THEMEOFSKALBUM_Loop6C:
 	dc.b	nD2, $06, nB1, $06
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop6C
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop6C
 
-Mus_THEMEOFSKALBUM_Loop6D:
+Snd_THEMEOFSKALBUM_Loop6D:
 	dc.b	nE2, $06, nB1, $06
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop6D
-	smpsLoop            $01, $02, Mus_THEMEOFSKALBUM_Loop6C
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop6D
+	smpsLoop            $01, $02, Snd_THEMEOFSKALBUM_Loop6C
 
-Mus_THEMEOFSKALBUM_Loop6E:
+Snd_THEMEOFSKALBUM_Loop6E:
 	dc.b	nD2, $06, nB1, $06
-	smpsLoop            $00, $08, Mus_THEMEOFSKALBUM_Loop6E
+	smpsLoop            $00, $08, Snd_THEMEOFSKALBUM_Loop6E
 
-Mus_THEMEOFSKALBUM_Loop6F:
+Snd_THEMEOFSKALBUM_Loop6F:
 	dc.b	nE2, $06, nB1, $06
-	smpsLoop            $00, $08, Mus_THEMEOFSKALBUM_Loop6F
-	smpsLoop            $02, $02, Mus_THEMEOFSKALBUM_Loop6C
+	smpsLoop            $00, $08, Snd_THEMEOFSKALBUM_Loop6F
+	smpsLoop            $02, $02, Snd_THEMEOFSKALBUM_Loop6C
 
-Mus_THEMEOFSKALBUM_Loop70:
+Snd_THEMEOFSKALBUM_Loop70:
 	dc.b	nE2, $06, nB1, $06
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop70
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop70
 	dc.b	nD2, $06
 
-Mus_THEMEOFSKALBUM_Loop71:
+Snd_THEMEOFSKALBUM_Loop71:
 	dc.b	nB1, $06, nE2, $06
-	smpsLoop            $00, $07, Mus_THEMEOFSKALBUM_Loop71
+	smpsLoop            $00, $07, Snd_THEMEOFSKALBUM_Loop71
 	dc.b	nB1, $06, nD2, $06, nB1, $06, nD2, $06, nB1, $06, nD3, $06
 	dc.b	nB2, $06, nD3, $06, nB2, $06
 
-Mus_THEMEOFSKALBUM_Loop72:
+Snd_THEMEOFSKALBUM_Loop72:
 	dc.b	nE2, $06, nB1, $06
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop72
+	smpsLoop            $00, $04, Snd_THEMEOFSKALBUM_Loop72
 	dc.b	nD2, $06
 
-Mus_THEMEOFSKALBUM_Loop73:
+Snd_THEMEOFSKALBUM_Loop73:
 	dc.b	nB1, $06, nE2, $06
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop73
+	smpsLoop            $00, $03, Snd_THEMEOFSKALBUM_Loop73
 	dc.b	nB1, $06, nRst, $30, nG1, $06
 	smpsPSGAlterVol     $01
 	dc.b	nA1, $0C
@@ -1005,14 +1005,14 @@ Mus_THEMEOFSKALBUM_Loop73:
 	dc.b	nCs2, $12
 	smpsPSGAlterVol     $01
 
-Mus_THEMEOFSKALBUM_Loop74:
+Snd_THEMEOFSKALBUM_Loop74:
 	dc.b	nE1, $0C, nG1, $06, nA1, $0C, nCs2, $12
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop74
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop74
 	dc.b	nE1, $30, nRst, $06
 	smpsStop
 
 ; PSG2 Data
-Mus_THEMEOFSKALBUM_PSG2:
+Snd_THEMEOFSKALBUM_PSG2:
 	smpsModSet          $01, $01, $FD, $00
 	smpsAlterNote       $04
 	dc.b	nC0, $60, nRst, $03
@@ -1020,29 +1020,29 @@ Mus_THEMEOFSKALBUM_PSG2:
 	smpsAlterNote       $00
 	smpsPSGAlterVol     $03
 
-Mus_THEMEOFSKALBUM_Loop62:
+Snd_THEMEOFSKALBUM_Loop62:
 	dc.b	nCs2, $06, nA1, $06
-	smpsLoop            $00, $0E, Mus_THEMEOFSKALBUM_Loop62
+	smpsLoop            $00, $0E, Snd_THEMEOFSKALBUM_Loop62
 	dc.b	nCs3, $06, nA2, $06, nCs3, $06, nA2, $06
-	smpsLoop            $01, $04, Mus_THEMEOFSKALBUM_Loop62
+	smpsLoop            $01, $04, Snd_THEMEOFSKALBUM_Loop62
 
-Mus_THEMEOFSKALBUM_Loop63:
+Snd_THEMEOFSKALBUM_Loop63:
 	dc.b	nCs2, $06, nA1, $06
-	smpsLoop            $00, $18, Mus_THEMEOFSKALBUM_Loop63
-	smpsLoop            $01, $02, Mus_THEMEOFSKALBUM_Loop63
+	smpsLoop            $00, $18, Snd_THEMEOFSKALBUM_Loop63
+	smpsLoop            $01, $02, Snd_THEMEOFSKALBUM_Loop63
 
-Mus_THEMEOFSKALBUM_Loop64:
+Snd_THEMEOFSKALBUM_Loop64:
 	dc.b	nCs2, $06, nA1, $06
-	smpsLoop            $00, $10, Mus_THEMEOFSKALBUM_Loop64
+	smpsLoop            $00, $10, Snd_THEMEOFSKALBUM_Loop64
 
-Mus_THEMEOFSKALBUM_Loop65:
+Snd_THEMEOFSKALBUM_Loop65:
 	dc.b	nCs2, $06, nA1, $06
-	smpsLoop            $00, $0E, Mus_THEMEOFSKALBUM_Loop65
+	smpsLoop            $00, $0E, Snd_THEMEOFSKALBUM_Loop65
 	dc.b	nCs3, $06, nA2, $06, nCs3, $06, nA2, $06
 
-Mus_THEMEOFSKALBUM_Loop66:
+Snd_THEMEOFSKALBUM_Loop66:
 	dc.b	nCs2, $06, nA1, $06
-	smpsLoop            $00, $08, Mus_THEMEOFSKALBUM_Loop66
+	smpsLoop            $00, $08, Snd_THEMEOFSKALBUM_Loop66
 	dc.b	nRst, $2D, nA0, $0C
 	smpsPSGAlterVol     $01
 	dc.b	nE1, $12
@@ -1058,14 +1058,14 @@ Mus_THEMEOFSKALBUM_Loop66:
 	dc.b	nA1, $0C
 	smpsPSGAlterVol     $01
 
-Mus_THEMEOFSKALBUM_Loop67:
+Snd_THEMEOFSKALBUM_Loop67:
 	dc.b	nD2, $06, nA0, $0C, nE1, $12, nA1, $0C
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop67
+	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop67
 	dc.b	nD2, $30
 	smpsStop
 
 ; PSG3 Data
-Mus_THEMEOFSKALBUM_PSG3:
+Snd_THEMEOFSKALBUM_PSG3:
 	smpsAlterNote       $02
 	dc.b	nRst, $32, nB0, $03, nE1, $03, nCs1, $03, nFs1, $03
 	smpsPSGAlterVol     $FF
@@ -1079,10 +1079,9 @@ Mus_THEMEOFSKALBUM_PSG3:
 	smpsAlterPitch	    -$0C
 	smpsAlterPitch	    -$0C
 	smpsAlterPitch	    -$0C
-	smpsJump            Mus_THEMEOFSKALBUM_FM1INIT
+	smpsJump            Snd_THEMEOFSKALBUM_FM1INIT
 
-
-Mus_THEMEOFSKALBUM_Voices:
+Snd_THEMEOFSKALBUM_Voices:
 ;	Voice $00
 ;	$3D
 ;	$61, $02, $12, $52, 	$1F, $18, $18, $1B, 	$09, $02, $01, $02
