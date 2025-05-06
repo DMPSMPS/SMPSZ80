@@ -211,704 +211,613 @@ Mus_THEMEOFSKALBUM_FM3:
 	smpsSetvoice        $03
 	smpsPan             panLeft, $00
 	smpsModSet          $00, $00, $00, $00
-	dc.b	nA2
-
-
-Mus_THEMEOFSKALBUM_Loop04:
-	dc.b	$03, nA2, $03
-	smpsAlterVol        $FD
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop04
 	dc.b	nA2, $03, nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop05:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop05
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop06:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop06
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop07:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop07
-
-Mus_THEMEOFSKALBUM_Loop08:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop08
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop09:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop09
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop0A:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop0A
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop0B:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop0B
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop0C:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop0C
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-
-Mus_THEMEOFSKALBUM_Loop0D:
-	smpsAlterVol        $FD
+	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop0D
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop0E:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop0E
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop0F:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop0F
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop10:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop10
-
-Mus_THEMEOFSKALBUM_Loop11:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop11
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop12:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop12
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop13:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop13
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop14:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop14
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop15:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop15
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-
-Mus_THEMEOFSKALBUM_Loop16:
-	smpsAlterVol        $FD
+	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop16
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop17:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop17
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop18:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop18
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop19:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop19
-
-Mus_THEMEOFSKALBUM_Loop1A:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop1A
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop1B:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop1B
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop1C:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop1C
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop1D:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop1D
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop1E:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop1E
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-
-Mus_THEMEOFSKALBUM_Loop1F:
-	smpsAlterVol        $FD
-	dc.b	nA2, $03, nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop1F
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop20:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop20
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop21:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop21
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop22:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop22
-
-Mus_THEMEOFSKALBUM_Loop23:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop23
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop24:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop24
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop25:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop25
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop26:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop26
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop27:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop27
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-
-Mus_THEMEOFSKALBUM_Loop28:
-	smpsAlterVol        $FD
-	dc.b	nD2, $03, nD2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop28
-	smpsAlterVol        $FE
-	dc.b	nD2
-
-Mus_THEMEOFSKALBUM_Loop29:
-	dc.b	$03
-	smpsLoop            $00, $06, Mus_THEMEOFSKALBUM_Loop29
-	smpsAlterVol        $02
-	dc.b	nD2, $03, nD2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop2A:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop2A
-	dc.b	nA2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $FD
-	dc.b	nE3, $03, nE3
-
-Mus_THEMEOFSKALBUM_Loop2B:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop2B
-	dc.b	nE2
-
-Mus_THEMEOFSKALBUM_Loop2C:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nD2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop2C
-	dc.b	nD2, $03
-	smpsAlterVol        $FE
-	dc.b	nD2
-
-Mus_THEMEOFSKALBUM_Loop2D:
-	dc.b	$03
-	smpsLoop            $00, $06, Mus_THEMEOFSKALBUM_Loop2D
-	smpsAlterVol        $02
-	dc.b	nD2, $03, nD2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop2E:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop2E
-	dc.b	nA2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $FD
-	dc.b	nE3, $03, nE3
-
-Mus_THEMEOFSKALBUM_Loop2F:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop2F
-	dc.b	nE2
-
-Mus_THEMEOFSKALBUM_Loop30:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nG2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop30
-	dc.b	nG2, $03
-	smpsAlterVol        $FE
-	dc.b	nE2, $03, nE2, $03, nG2, $03, nG2, $03, nG2, $03, nG2, $03
-	smpsAlterVol        $02
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03	
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
 	dc.b	nG2, $03, nG2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop31:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nG2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop31
-	dc.b	nG2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nG2
-
-Mus_THEMEOFSKALBUM_Loop32:
-	dc.b	$03, nG2, $03
-	smpsAlterVol        $FD
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop32
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop33:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop33
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nFs2, $03, nFs2, $03, nA2, $03, nA2, $03, nA2, $03, nA2, $03
-	smpsAlterVol        $02
-	dc.b	nA2, $03, nA2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop34:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop34
-	dc.b	nA2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop35:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE3, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop35
-	dc.b	nE2, $03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop36:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nD2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop36
-	dc.b	nD2, $03
-	smpsAlterVol        $FE
-	dc.b	nD2
-
-Mus_THEMEOFSKALBUM_Loop37:
-	dc.b	$03
-	smpsLoop            $00, $06, Mus_THEMEOFSKALBUM_Loop37
-	smpsAlterVol        $02
-	dc.b	nD2, $03, nD2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop38:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop38
-	dc.b	nA2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $FE
-	dc.b	nE3, $03
-	smpsAlterVol        $FF
-	dc.b	nE3
-
-Mus_THEMEOFSKALBUM_Loop39:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop39
-	dc.b	nE2
-
-Mus_THEMEOFSKALBUM_Loop3A:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nD2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop3A
-	dc.b	nD2, $03
-	smpsAlterVol        $FE
-	dc.b	nD2
-
-Mus_THEMEOFSKALBUM_Loop3B:
-	dc.b	$03
-	smpsLoop            $00, $06, Mus_THEMEOFSKALBUM_Loop3B
-	smpsAlterVol        $02
-	dc.b	nD2, $03, nD2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop3C:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop3C
-	dc.b	nA2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $FD
-	dc.b	nE3, $03, nE3
-
-Mus_THEMEOFSKALBUM_Loop3D:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop3D
-	dc.b	nE2
-
-Mus_THEMEOFSKALBUM_Loop3E:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nG2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop3E
-	dc.b	nG2, $03
-	smpsAlterVol        $FE
-	dc.b	nE2, $03, nE2, $03, nG2, $03, nG2, $03, nG2, $03, nG2, $03
-	smpsAlterVol        $02
+	smpsFMAlterVol        $03
 	dc.b	nG2, $03, nG2, $03
-	smpsAlterVol        $03
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop3F:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nG2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop3F
-	dc.b	nG2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nG2
-
-Mus_THEMEOFSKALBUM_Loop40:
-	dc.b	$03, nG2, $03
-	smpsAlterVol        $FD
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop40
-	dc.b	nD2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop41:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop41
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nFs2, $03, nFs2, $03, nA2, $03, nA2, $03, nA2, $03, nA2, $03
-	smpsAlterVol        $02
-	dc.b	nA2, $03, nA2, $03
-	smpsAlterVol        $03
-	dc.b	nE2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop42:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nA2, $03
-	smpsLoop            $00, $04, Mus_THEMEOFSKALBUM_Loop42
-	dc.b	nA2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
-	smpsAlterVol        $FD
-	dc.b	nE3, $03, nE3
-
-Mus_THEMEOFSKALBUM_Loop43:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop43
-	dc.b	nE2, $03
-
-Mus_THEMEOFSKALBUM_Loop44:
-	smpsAlterVol        $FD
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
-	smpsLoop            $00, $03, Mus_THEMEOFSKALBUM_Loop44
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop45:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop45
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop46:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop46
-	dc.b	nE2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $FD
 	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop47:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop47
-
-Mus_THEMEOFSKALBUM_Loop48:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop48
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop49:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop49
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop4A:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop4A
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop4B:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop4B
-	dc.b	nE2, $03
-	smpsAlterVol        $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $03
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nG2, $03, nG2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE3, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $FD
 	dc.b	nE3, $03, nE2, $03
-	smpsAlterVol        $03
-	dc.b	nB2, $03, nE2
-
-Mus_THEMEOFSKALBUM_Loop4C:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop4C
-
-Mus_THEMEOFSKALBUM_Loop4D:
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
 	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop4D
-	dc.b	nA2
-
-Mus_THEMEOFSKALBUM_Loop4E:
-	dc.b	$03
-	smpsAlterVol        $FD
-	dc.b	nA2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop4E
-	dc.b	nA2, $03
-	smpsAlterVol        $FE
-	dc.b	nA2, $03
-
-Mus_THEMEOFSKALBUM_Loop4F:
-	dc.b	nFs2, $03
-	smpsLoop            $00, $05, Mus_THEMEOFSKALBUM_Loop4F
-	smpsAlterVol        $02
-	dc.b	nFs2, $03, nFs2
-
-Mus_THEMEOFSKALBUM_Loop50:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nE2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop50
-
-Mus_THEMEOFSKALBUM_Loop51:
-	dc.b	nE2, $03
-	smpsAlterVol        $03
-	dc.b	nE3, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop51
-	dc.b	nE2
-
-Mus_THEMEOFSKALBUM_Loop52:
-	dc.b	$03
-	smpsAlterVol        $03
-	dc.b	nD2, $03
-	smpsLoop            $00, $02, Mus_THEMEOFSKALBUM_Loop52
-	dc.b	nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03
-	smpsAlterVol        $FD
+	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nD2, $03
-	smpsAlterVol        $FD
-	dc.b	nD3, $03, nD2, $03, nRst, $7F, nRst, $7F, nRst, $1C
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nB2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nA2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nFs2, $03, nFs2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE2, $03, nE2, $03
+	smpsFMAlterVol        $03
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nE3, $03, nE2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD2, $03, nD2, $03
+	smpsFMAlterVol        $FD
+	dc.b	nD3, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nA2, $03, nD2, $03
+	smpsFMAlterVol        $03
+	dc.b	nD3, $03, nD2, $03
 	smpsStop
 
 ; FM4 Data
