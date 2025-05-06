@@ -16,7 +16,6 @@ s3p31_Header:
 
 ; PSG2 Data
 s3p31_PSG2:
-	smpsChangeTransposition	   -$05
 	smpsAlterNote       $FF
 	smpsSetvoice        sTone_01
 	smpsPSGvoice        sTone_03
@@ -137,7 +136,6 @@ s3p31_Jump01:
 
 ; FM5 Data
 s3p31_FM5:
-	smpsChangeTransposition	   -$05
 	smpsAlterNote       $01
 	dc.b	nRst, $02
 	smpsSetvoice        $02
