@@ -10,7 +10,7 @@ Supersonic_Header:
 	smpsHeaderFM        Supersonic_FM3,	$F4, $13
 	smpsHeaderFM        Supersonic_FM4,	$F4, $13
 	smpsHeaderFM        Supersonic_FM5,	$F4, $13
-	smpsHeaderPSG       Supersonic_PSG1,	$DC, $01, $00, sTone_09
+	smpsHeaderPSG       Supersonic_PSG1,	$DC, $01, $00, sTone_25
 	smpsHeaderPSG       Supersonic_PSG2,	$DC, $03, $00, $00
 	smpsHeaderPSG       Supersonic_PSG3,	$0C, $03, $00, sTone_04
 
