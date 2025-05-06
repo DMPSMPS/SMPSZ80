@@ -100,9 +100,11 @@ s3p31_Jump02:
 
 ; FM4 Data
 s3p31_FM4:
-	dc.b	nRst, $01
 	smpsAlterNote       $FF
+	smpsPan             panLeft, $00
+	dc.b	nRst, $01
 	smpsSetvoice        $02
+	smpsModSet          $07, $01, $03, $05
 
 s3p31_Jump01:
 	dc.b	nC4, $06, nRst, nCs4, nRst, nC4, nG4, nFs4, nF4, nRst, nE4, nEb4
@@ -136,9 +138,11 @@ s3p31_Jump01:
 
 ; FM5 Data
 s3p31_FM5:
+	smpsPan             panRight, $00
 	smpsAlterNote       $01
 	dc.b	nRst, $02
 	smpsSetvoice        $02
+	smpsModSet          $07, $01, $03, $05
 
 s3p31_Jump00:
 	dc.b	nC4, $06, nRst, nCs4, nRst, nC4, nG4, nFs4, nF4, nRst, nE4, nEb4
@@ -272,4 +276,3 @@ s3p31_Voices:
 	smpsVcDecayLevel    $01, $01, $01, $02
 	smpsVcReleaseRate   $0A, $0A, $0A, $05
 	smpsVcTotalLevel    $00, $00, $00, $15
-
