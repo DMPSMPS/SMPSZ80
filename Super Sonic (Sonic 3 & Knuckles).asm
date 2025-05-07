@@ -231,7 +231,6 @@ Snd_Supersonic_Loop12:
 	dc.b	nCs5, $03, nB4, $03, nA4, $03, nAb4, $03
 	smpsPan             panLeft, $00
 	dc.b	nA4, $03, nAb4, $03, nFs4, $03, nE4, $03
-	smpsFMAlterVol	    $0A
 	smpsPan             panCenter, $00
 	smpsJump	Snd_Supersonic_FM3
 
