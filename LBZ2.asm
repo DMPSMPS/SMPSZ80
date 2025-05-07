@@ -2,7 +2,7 @@ Snd_LBZ2_Header:
 	smpsHeaderStartSong 3
 	smpsHeaderVoice     Snd_LBZ2_Voices
 	smpsHeaderChan      $06, $03
-	smpsHeaderTempo     $02, $14
+	smpsHeaderTempo     $02, $E9
 
 	smpsHeaderDAC       Snd_LBZ2_DAC
 	smpsHeaderFM        Snd_LBZ2_FM1,	$00, $0C
