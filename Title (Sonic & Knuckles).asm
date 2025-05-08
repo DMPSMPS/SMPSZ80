@@ -991,24 +991,28 @@ Snd_THEMEOFSKALBUM_Loop73:
 	dc.b	nB1, $06, nE2, $06
 	smpsLoop            $00, $03, Snd_THEMEOFSKALBUM_Loop73
 	dc.b	nB1, $06, nRst, $30, nG1, $06
-	smpsPSGAlterVol     $01
 	dc.b	nA1, $0C
-	smpsPSGAlterVol     $01
 	dc.b	nCs2, $12
-	smpsPSGAlterVol     $01
 	dc.b	nE1, $0C
-	smpsPSGAlterVol     $01
 	dc.b	nG1, $06
-	smpsPSGAlterVol     $01
 	dc.b	nA1, $0C
-	smpsPSGAlterVol     $01
 	dc.b	nCs2, $12
-	smpsPSGAlterVol     $01
-
-Snd_THEMEOFSKALBUM_Loop74:
-	dc.b	nE1, $0C, nG1, $06, nA1, $0C, nCs2, $12
-	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop74
-	dc.b	nE1, $30, nRst, $06
+	dc.b	nE1, $0C
+	dc.b	nG1, $06
+	smpsPSGAlterVol		$01
+	dc.b	nA1, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nCs2, $12
+	smpsPSGAlterVol		$01
+	dc.b	nE1, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nG1, $06
+	smpsPSGAlterVol		$01
+	dc.b	nA1, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nCs2, $12
+	smpsPSGAlterVol		$01
+	dc.b	nE1, $30
 	smpsStop
 
 ; PSG2 Data
@@ -1043,24 +1047,29 @@ Snd_THEMEOFSKALBUM_Loop65:
 Snd_THEMEOFSKALBUM_Loop66:
 	dc.b	nCs2, $06, nA1, $06
 	smpsLoop            $00, $08, Snd_THEMEOFSKALBUM_Loop66
-	dc.b	nRst, $2D, nA0, $0C
-	smpsPSGAlterVol     $01
-	dc.b	nE1, $12
-	smpsPSGAlterVol     $01
-	dc.b	nA1, $0C
-	smpsPSGAlterVol     $01
-	dc.b	nD2, $06
-	smpsPSGAlterVol     $01
+	dc.b	nRst, $2D
 	dc.b	nA0, $0C
-	smpsPSGAlterVol     $01
 	dc.b	nE1, $12
-	smpsPSGAlterVol     $01
 	dc.b	nA1, $0C
-	smpsPSGAlterVol     $01
-
-Snd_THEMEOFSKALBUM_Loop67:
-	dc.b	nD2, $06, nA0, $0C, nE1, $12, nA1, $0C
-	smpsLoop            $00, $02, Snd_THEMEOFSKALBUM_Loop67
+	dc.b	nD2, $06
+	dc.b	nA0, $0C
+	dc.b	nE1, $12
+	dc.b	nA1, $0C
+	dc.b	nD2, $06
+	dc.b	nA0, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nE1, $12
+	smpsPSGAlterVol		$01
+	dc.b	nA1, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nD2, $06
+	smpsPSGAlterVol		$01
+	dc.b	nA0, $0C
+	smpsPSGAlterVol		$01
+	dc.b	nE1, $12
+	smpsPSGAlterVol		$01
+	dc.b	nA1, $0C
+	smpsPSGAlterVol		$01
 	dc.b	nD2, $30
 	smpsStop
 
