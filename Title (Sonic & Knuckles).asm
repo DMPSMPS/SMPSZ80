@@ -497,7 +497,7 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nD2, $03, nD2, $03
 	smpsFMAlterVol        $FD
