@@ -16,10 +16,10 @@ Snd_Supersonic_Header:
 
 ; DAC Data
 Snd_Supersonic_DAC:
-	dc.b	$86, $06, dSnareS3, $06, $86, $03, $86, $03, dSnareS3, $06, $86, $06
-	dc.b	dSnareS3, $06, $86, $03, $86, $03, dSnareS3, $03, dSnareS3, $03, $86, $06
-	dc.b	dSnareS3, $06, $86, $03, $86, $03, dSnareS3, $06, $86, $06, dSnareS3, $03
-	dc.b	$86, $06, dSnareS3
+	dc.b	dKickS3, $06, dSnareS3, $06, dKickS3, $03, dKickS3, $03, dSnareS3, $06, dKickS3, $06
+	dc.b	dSnareS3, $06, dKickS3, $03, dKickS3, $03, dSnareS3, $03, dSnareS3, $03, dKickS3, $06
+	dc.b	dSnareS3, $06, dKickS3, $03, dKickS3, $03, dSnareS3, $06, dKickS3, $06, dSnareS3, $03
+	dc.b	dKickS3, $06, dSnareS3
 
 Snd_Supersonic_Loop02:
 	dc.b	$03
@@ -28,17 +28,17 @@ Snd_Supersonic_Loop01:
 	dc.b	dSnareS3, $03, dSnareS3, $03
 
 Snd_Supersonic_Loop00:
-	dc.b	$86, $06, dSnareS3, $06
+	dc.b	dKickS3, $06, dSnareS3, $06
 	smpsLoop            $00, $07, Snd_Supersonic_Loop00
-	dc.b	$86, $06
+	dc.b	dKickS3, $06
 	smpsLoop            $01, $04, Snd_Supersonic_Loop01
-	dc.b	dSnareS3, $03, dSnareS3, $03, $86, $06, dSnareS3, $06, $86, $06, dSnareS3, $03
-	dc.b	dSnareS3, $03, $86, $06, dSnareS3, $06, $86, $03, dSnareS3, $03, dSnareS3, $03
-	dc.b	dSnareS3, $03, $86, $06, dSnareS3, $06, $86, $06, dSnareS3, $03, dSnareS3, $03
-	dc.b	$86, $03, dSnareS3, $03, dSnareS3, $06, $86, $03, dSnareS3, $03, dSnareS3, $03
-	dc.b	dSnareS3, $03, $86, $03, $86, $06, $86, $06, $86, $03, $86, $0C
-	dc.b	$86, $06, dSnareS3, $03, dSnareS3, $03, dSnareS3, $06, $86, $03, $86, $06
-	dc.b	$86, $06, dSnareS3, $03, dSnareS3, $0C, $86, $06, dSnareS3, $03
+	dc.b	dSnareS3, $03, dSnareS3, $03, dKickS3, $06, dSnareS3, $06, dKickS3, $06, dSnareS3, $03
+	dc.b	dSnareS3, $03, dKickS3, $06, dSnareS3, $06, dKickS3, $03, dSnareS3, $03, dSnareS3, $03
+	dc.b	dSnareS3, $03, dKickS3, $06, dSnareS3, $06, dKickS3, $06, dSnareS3, $03, dSnareS3, $03
+	dc.b	dKickS3, $03, dSnareS3, $03, dSnareS3, $06, dKickS3, $03, dSnareS3, $03, dSnareS3, $03
+	dc.b	dSnareS3, $03, dKickS3, $03, dKickS3, $06, dKickS3, $06, dKickS3, $03, dKickS3, $0C
+	dc.b	dKickS3, $06, dSnareS3, $03, dSnareS3, $03, dSnareS3, $06, dKickS3, $03, dKickS3, $06
+	dc.b	dKickS3, $06, dSnareS3, $03, dSnareS3, $0C, dKickS3, $06, dSnareS3, $03
 	smpsLoop            $02, $02, Snd_Supersonic_Loop02
 	dc.b	dSnareS3, $03, dSnareS3, $03, dSnareS3, $03
 	smpsJump	Snd_Supersonic_DAC
@@ -176,7 +176,6 @@ Snd_Supersonic_FM3:
 	smpsPan             panRight, $00
 	dc.b	nFs4, $03, nAb4, $03, nA4, $03, nB4, $03
 	smpsPan             panCenter, $00
-	smpsFMAlterVol	    $05
 
 Snd_Supersonic_Loop11:
 	dc.b	nA4, $0C, nFs4, $06, nE4, $06, nA4, $06, nFs4, $06, nD4, $06
@@ -194,7 +193,6 @@ Snd_Supersonic_Loop10:
 	dc.b	nCs5, $03, nD5, $03, nE5, $06, nD5, $05, nRst, $01, nD5, $05
 	dc.b	nRst, $01, nD5, $03, nE5, $03, nFs5, $06, nE4, $24, nFs4, $03
 	dc.b	nAb4, $03, nA4, $03, nCs5, $03
-	smpsFMAlterVol	    -$05
 	smpsPan             panRight, $00
 	dc.b	nE5, $03, nD5, $03, nCs5, $03, nB4, $03
 	smpsPan             panLeft, $00
@@ -204,7 +202,6 @@ Snd_Supersonic_Loop10:
 	smpsPan             panLeft, $00
 	dc.b	nA4, $03, nAb4, $03, nFs4, $03, nE4, $03
 	smpsPan             panCenter, $00
-	smpsFMAlterVol	    $05
 
 Snd_Supersonic_Loop13:
 	dc.b	nA4, $0C, nFs4, $06, nE4, $06, nA4, $06, nFs4, $06, nD4, $06
@@ -222,7 +219,6 @@ Snd_Supersonic_Loop12:
 	dc.b	nCs5, $03, nD5, $03, nE5, $06, nD5, $05, nRst, $01, nD5, $05
 	dc.b	nRst, $01, nD5, $03, nE5, $03, nFs5, $06, nE4, $24, nFs4, $03
 	dc.b	nAb4, $03, nA4, $03, nCs5, $03
-	smpsFMAlterVol	    -$05
 	smpsPan             panRight, $00
 	dc.b	nE5, $03, nD5, $03, nCs5, $03, nB4, $03
 	smpsPan             panLeft, $00
