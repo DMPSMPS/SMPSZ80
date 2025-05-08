@@ -211,7 +211,7 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsSetvoice        $03
 	smpsPan             panLeft, $00
 	smpsModSet          $00, $00, $00, $00
-		dc.b	nA2, $03, nA2, $03
+	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $FD
@@ -485,17 +485,17 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
@@ -517,19 +517,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $FD
@@ -549,19 +549,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $03
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nE3, $03, nG2, $03
 	smpsFMAlterVol        $03
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nB2, $03, nG2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $03
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nD3, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nA2, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nD2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $FD
@@ -581,19 +581,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nD2, $03, nD2, $03
 	smpsFMAlterVol        $FD
@@ -613,19 +613,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nD2, $03, nD2, $03
 	smpsFMAlterVol        $FD
@@ -645,19 +645,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $FD
@@ -677,19 +677,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $03
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nE3, $03, nG2, $03
 	smpsFMAlterVol        $03
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nB2, $03, nG2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $03
 	dc.b	nG2, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nD3, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nG2, $03, nG2, $03
+	dc.b	nA2, $03, nG2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nD2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $FD
@@ -709,19 +709,19 @@ Snd_THEMEOFSKALBUM_FM3:
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nE3, $03, nA2, $03
 	smpsFMAlterVol        $03
-	dc.b	nA2, $03, nA2, $03
+	dc.b	nB2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $03
 	dc.b	nE2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE3, $03, nE3, $03
+	dc.b	nD3, $03, nE3, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nA2, $03, nE2, $03
 	smpsFMAlterVol        $FD
-	dc.b	nE2, $03, nE2, $03
+	dc.b	nD3, $03, nE2, $03
 	smpsFMAlterVol        $FD
 	dc.b	nA2, $03, nA2, $03
 	smpsFMAlterVol        $FD
