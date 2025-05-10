@@ -465,7 +465,7 @@ Snd_Knuckles_Special_Stage_PSG1INIT:
 
 ; PSG2 Data
 Snd_Knuckles_Special_Stage_PSG2:
-	dc.b	nRst, $01
+	dc.b	nRst, $02
 	smpsJump	Snd_Knuckles_Special_Stage_PSG1INIT
 
 ; PSG3 Data
