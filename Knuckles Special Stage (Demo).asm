@@ -363,12 +363,14 @@ Snd_Knuckles_Special_Demo_FM4INIT:
 	smpsPan             panLeft, $00
 	smpsModSet          $07, $01, $09, $05
 	smpsSetvoice        $02
+	smpsAlterPitch	    $0C
 	dc.b	nC2, $0B, nRst, $06, nBb1, $17, nRst, $05, nC2, $0C, nRst, $05
 	dc.b	nBb1, $11, nBb1, $0C, nC2, $0B, nRst, $06, nBb1, $16, nRst, $06
 	dc.b	nC2, $0B, nRst, $06, nBb1, $11
 	smpsModSet          $07, $01, $0A, $06
 	dc.b	nB1, $06, nRst, $05
 	smpsSetvoice        $03
+	smpsAlterPitch	    $F4
 	smpsPan             panRight, $00
 	smpsFMAlterVol      $F9
 	smpsModSet          $24, $01, $04, $07
@@ -404,12 +406,14 @@ Snd_Knuckles_Special_Demo_FM5INIT:
 	smpsPan             panRight, $00
 	smpsModSet          $07, $01, $08, $05
 	smpsSetvoice        $02
+	smpsAlterPitch	    $0C
 	dc.b	nC4, $0B, nRst, $06, nBb3, $17, nRst, $05, nC4, $0C, nRst, $05
 	dc.b	nBb3, $11, nBb3, $0C, nC4, $0B, nRst, $06, nBb3, $16, nRst, $06
 	dc.b	nC4, $0B, nRst, $06, nBb3, $11
 	smpsModSet          $07, $01, $0A, $06
 	dc.b	nB3, $06, nRst, $05
 	smpsSetvoice        $03
+	smpsAlterPitch	    $F4
 	smpsFMAlterVol      $F9
 	smpsPan             panLeft, $00
 	smpsModSet          $24, $01, $04, $07
