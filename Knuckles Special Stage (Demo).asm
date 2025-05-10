@@ -160,6 +160,7 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	smpsSetvoice        $04
 	smpsFMAlterVol      $FE
 	smpsModSet          $07, $01, $03, $05
+	smpsAlterPitch      $F4
 	dc.b	nG3, $06, nE4, $05, nC4, $06, nG4, $06, nE4, $05, nC5, $06
 	smpsModSet          $18, $01, $09, $07
 	dc.b	nBb4, $22
@@ -222,7 +223,6 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	dc.b	nE5, $0B
 	dc.b	nD5, $0B
 	smpsSetvoice        $06
-	smpsAlterPitch      $F4
 	smpsFMAlterVol      $FF
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nB5, $11
@@ -323,7 +323,6 @@ Snd_Knuckles_Special_Demo_FM3INIT:
 	dc.b	nG4, $03, nC5, $03, nE5, $03, nRst, $03, nBb4, $1C, nC5, $03
 	dc.b	nE4, $03, nG4, $02, nC5, $03, nE5, $03, nRst, $03, nBb4, $0B
 	dc.b	nD5, $06, nD5, $06, nC5, $0B, nRst, $7F, nRst, $7F, nRst, $67
-	smpsAlterPitch	    $0C
 	smpsFMAlterVol      $FD
 	smpsModSet          $07, $01, $07, $05
 	smpsSetvoice        $05
