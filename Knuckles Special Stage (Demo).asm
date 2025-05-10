@@ -165,7 +165,11 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	smpsModSet          $18, $01, $09, $07
 	dc.b	nBb4, $22
 	smpsModSet          $07, $01, $03, $05
-	dc.b	nG4, $06, nBb4, $05, nA4, $22, nF4, $06, nG4, $06
+	dc.b	nG4, $06, nBb4, $05
+	smpsModSet          $18, $01, $09, $07
+	dc.b	nA4, $22
+	smpsModSet          $07, $01, $03, $05
+	dc.b	nF4, $06, nG4, $06
 	dc.b	nAb4, $05, nRst, $06, nAb4, $06, nRst, $05, nAb4, $06
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nG4, $0B
