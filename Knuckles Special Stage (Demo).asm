@@ -355,7 +355,6 @@ Snd_Knuckles_Special_Demo_FM3INIT:
 	dc.b	nAb4, $0B, nA4, $17, nE5, $0B, nA4, $0B, nAb4, $17, nE5, $0B
 	dc.b	nAb4, $0C, nG4, $16, nE5, $0C, nG4, $0B, nFs4, $17, nFs5, $0B
 	dc.b	nFs4, $0B, nF4, $22, nFs4, $0C, nG4, $2D
-	smpsAlterPitch	    $F4
 	smpsJump	Snd_Knuckles_Special_Demo_FM3INIT
 
 ; FM4 Data
