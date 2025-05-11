@@ -414,7 +414,7 @@ Snd_Knuckles_Special_Demo_FM4INIT:
 	smpsSetvoice        $02
 	smpsFMAlterVol      $07
 	smpsPan             panLeft, $00
-	smpsModSet          $07, $01, $0A, $06
+	smpsModSet          $07, $01, $03, $05
 	smpsAlterNote       $00
 	dc.b	nC4, $11, nC4, $11, nC4, $06, nB3, $11, nB3, $0B, nB3, $0C
 	dc.b	nB3, $0B, nBb3, $11, nBb3, $0B, nBb3, $06, nC4, $06, nBb3, $05
@@ -423,7 +423,9 @@ Snd_Knuckles_Special_Demo_FM4INIT:
 	dc.b	nC4, $11, nC4, $06, nB3, $11, nB3, $0B, nB3, $0B, nB3, $0C
 	dc.b	nBb3, $11, nBb3, $0B, nBb3, $06, nC4, $05, nBb3, $06, nA3, $0B
 	dc.b	nC4, $0C, nBb3, $0B, nA3, $0B, nAb3, $11, nAb3, $11, nAb3, $0C
-	dc.b	nG3, $0B, nG3, $0B, nA3, $0C, nB3, $0B, nA3, $11, nC4, $11
+	dc.b	nG3, $0B, nG3, $0B
+	smpsModSet          $07, $01, $0A, $06
+	dc.b	nA3, $0C, nB3, $0B, nA3, $11, nC4, $11
 	dc.b	nE4, $0B, nAb3, $11, nB3, $11, nE4, $0C, nG3, $11, nC4, $11
 	dc.b	nE4, $0B, nFs4, $0B, nE4, $0C, nD4, $0B, nA3, $0B, nC4, $0C
 	dc.b	nB3, $0B, nC4, $0B, nCs4, $0C, nD4, $02, nRst, $09, nD4, $22
@@ -456,7 +458,7 @@ Snd_Knuckles_Special_Demo_FM5INIT:
 	smpsPan             panRight, $00
 	smpsFMAlterVol      $07
 	smpsSetvoice        $02
-	smpsModSet          $07, $01, $0A, $06
+	smpsModSet          $07, $01, $03, $05
 	dc.b	nE4, $11, nF4, $11, nE4, $06, nD4, $11, nD4, $0B, nE4, $0C
 	dc.b	nD4, $0B, nD4, $0B, nE4, $06, nD4, $0B, nC4, $06, nD4, $06
 	dc.b	nE4, $05, nF4, $0C, nE4, $0B, nD4, $0B, nC4, $0C, nC4, $11
@@ -465,6 +467,7 @@ Snd_Knuckles_Special_Demo_FM5INIT:
 	dc.b	nD4, $0C, nD4, $0B, nE4, $06, nD4, $0B, nC4, $06, nD4, $05
 	dc.b	nE4, $06, nF4, $0B, nE4, $0C, nD4, $0B, nC4, $0B, nC4, $11
 	dc.b	nF4, $11, nE4, $0C, nG4, $0B, nF4, $0B, nE4, $0C, nD4, $0B
+	smpsModSet          $07, $01, $0A, $06
 	dc.b	nC4, $11, nE4, $11, nA4, $0B, nB3, $11, nE4, $11, nAb4, $0C
 	dc.b	nC4, $11, nE4, $11, nG4, $0B, nA4, $0B, nG4, $0C, nFs4, $0B
 	dc.b	nD4, $0B, nF4, $0C, nE4, $0B, nF4, $0B, nFs4, $0C, nG4, $02
