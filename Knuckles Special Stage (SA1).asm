@@ -187,7 +187,11 @@ Snd_Knuckles_Special_Stage_FM2INIT:
     	smpsModSet          $07, $01, $05, $07
     	dc.b    nG4, $0C
     	smpsModSet          $07, $01, $03, $05
-    	dc.b    nF4, $06, nE4, $0C, nC4, $06, nG4, $05, nE4, $06, nC5, $06
+    	dc.b    nF4, $06
+    	smpsModSet          $07, $01, $05, $07
+	dc.b	nE4, $0C
+    	smpsModSet          $07, $01, $03, $05
+	dc.b	nC4, $06, nG4, $05, nE4, $06, nC5, $06
     	dc.b    nG4, $06, nE4, $06
     	smpsModSet          $18, $01, $09, $07
     	dc.b    nBb4, $23
@@ -222,7 +226,11 @@ Snd_Knuckles_Special_Stage_FM2INIT:
     	smpsModSet          $07, $01, $05, $07
     	dc.b    nG4, $0C
     	smpsModSet          $07, $01, $03, $05
-    	dc.b    nF4, $06, nE4, $0B, nC4, $06, nG4, $06, nE4, $06, nC5, $06
+    	dc.b    nF4, $06
+    	smpsModSet          $07, $01, $05, $07
+	dc.b	nE4, $0B
+    	smpsModSet          $07, $01, $03, $05
+	dc.b	nC4, $06, nG4, $06, nE4, $06, nC5, $06
     	dc.b    nG4, $06, nE4, $06
     	smpsModSet          $18, $01, $09, $07
     	dc.b    nBb4, $23
@@ -263,13 +271,20 @@ Snd_Knuckles_Special_Stage_FM2INIT:
     	dc.b    nE6, $0C
     	dc.b    nD6, $0C
     	smpsModSet          $07, $01, $03, $05
-    	dc.b    nC6, $06, nE5, $06, nG5, $05, nAb5, $06, nA5, $18
+    	dc.b    nC6, $06, nE5, $06, nG5, $05, nAb5, $06
+    	smpsModSet          $07, $01, $05, $07
+	dc.b	nA5, $18
+    	smpsModSet          $07, $01, $03, $05
     	dc.b    nC5, $06, nE5, $06, nG5, $06, nA5, $05
     	smpsModSet          $07, $01, $05, $07
     	dc.b    nBb5, $0C, nA5, $0C
     	dc.b    nG5, $0C
    	smpsModSet          $07, $01, $03, $05
-    	dc.b    nF5, $06, nE5, $06, nB5, $11, nD6, $06, nC6, $06
+    	dc.b    nF5, $06, nE5, $06
+    	smpsModSet          $07, $01, $05, $07
+	dc.b	nB5, $11
+   	smpsModSet          $07, $01, $03, $05
+	dc.b	nD6, $06, nC6, $06
     	dc.b    nB5, $06, nA5, $06, nAb5, $06
    	smpsModSet          $18, $01, $05, $07
     	dc.b    nG5, $35
@@ -330,7 +345,6 @@ Snd_Knuckles_Special_Stage_FM2INIT:
 	smpsModSet          $0C, $01, $04, $06
 	dc.b	nG6, $12, nF6, $0B, nE6, $0C, nG6, $0C, nG6, $12, nF6, $11
 	dc.b	nE6, $0C, nF6, $12
-	smpsModSet          $0C, $01, $04, $06
 	dc.b	nC6, $1D
 	dc.b	nC6, $12, nF6, $12, nE6, $0B
 	dc.b	nE6, $0C, nD6, $0C, nC6, $0C, nB5, $0B, nC6, $12, nD6, $12
