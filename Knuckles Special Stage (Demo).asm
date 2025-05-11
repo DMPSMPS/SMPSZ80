@@ -149,14 +149,27 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	dc.b	nD5, $1C
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nC5, $03, nE4, $03, nG4, $03, nC5, $03, nE5, $02
-	dc.b	nRst, $03, nD5, $0C, nG5, $05, nF5, $0C, nC5, $02, nE4, $03
+	dc.b	nRst, $03
+	smpsModSet          $18, $01, $09, $07
+	dc.b	nD5, $0C
+	smpsModSet          $07, $01, $05, $07
+	dc.b	nG5, $05
+	smpsModSet          $18, $01, $09, $07
+	dc.b	nF5, $0C
+	smpsModSet          $07, $01, $05, $07
+	dc.b	nC5, $02, nE4, $03
 	dc.b	nG4, $03, nC5, $03, nE5, $03, nRst, $03
 	smpsModSet          $18, $01, $09, $07
 	dc.b	nD5, $1C
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nC5, $03
-	dc.b	nE4, $03, nG4, $02, nC5, $03, nE5, $03, nRst, $03, nD5, $0B
-	dc.b	nG5, $06, nF5, $06, nC5, $0B
+	dc.b	nE4, $03, nG4, $02, nC5, $03, nE5, $03, nRst, $03
+	smpsModSet          $18, $01, $09, $07
+	dc.b	nD5, $0B
+	smpsModSet          $07, $01, $05, $07
+	dc.b	nG5, $06, nF5, $06
+	smpsModSet          $18, $01, $09, $07
+	dc.b	nC5, $0B
 	smpsSetvoice        $04
 	smpsFMAlterVol      $FE
 	smpsModSet          $07, $01, $03, $05
@@ -236,7 +249,11 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	dc.b	nA5, $0B
 	dc.b	nC6, $0C
 	smpsModSet          $07, $01, $03, $05
-	dc.b	nE6, $05, nD6, $0C, nC6, $05
+	dc.b	nE6, $05
+	smpsModSet          $07, $01, $05, $07
+	dc.b	nD6, $0C
+	smpsModSet          $07, $01, $03, $05
+	dc.b	nC6, $05
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nD6, $0C
 	smpsModSet          $07, $01, $03, $05
@@ -278,7 +295,11 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	dc.b	nE6, $0B, nD6, $0C
 	smpsModSet          $07, $01, $03, $05
 	dc.b	nC6, $05
-	dc.b	nE5, $06, nG5, $06, nAb5, $05, nA5, $17, nE5, $06, nA5, $05
+	dc.b	nE5, $06, nG5, $06, nAb5, $05
+	smpsModSet          $18, $01, $05, $07
+	dc.b	nA5, $17
+	smpsModSet          $07, $01, $03, $05
+	dc.b	nE5, $06, nA5, $05
 	dc.b	nB5, $06, nC6, $06
 	smpsModSet          $07, $01, $05, $07
 	dc.b	nD6, $0B, nC6, $0B, nB5, $0C
@@ -294,19 +315,23 @@ Snd_Knuckles_Special_Demo_FM2INIT:
 	dc.b	nG6, $33
 	smpsSetvoice        $07
 	smpsFMAlterVol      $01
-	smpsModSet          $07, $01, $03, $05
-	dc.b	nE6, $17, nE6, $06, nF6, $05, nG6, $06, nG6, $11, nF6, $0B
-	dc.b	nE6, $0C, nG6, $0B, nG6, $11, nF6, $11, nE6, $0B, nF6, $11
 	smpsModSet          $0C, $01, $04, $06
-	dc.b	nC6, $1D
+	dc.b	nE6, $17
 	smpsModSet          $07, $01, $03, $05
+	dc.b	nE6, $06, nF6, $05, nG6, $06
+	smpsModSet          $0C, $01, $04, $06
+	dc.b	nG6, $11, nF6, $0B
+	dc.b	nE6, $0C, nG6, $0B, nG6, $11, nF6, $11, nE6, $0B, nF6, $11
+	dc.b	nC6, $1D
 	dc.b	nC6, $11, nF6, $11, nE6, $0B, nE6, $0B, nD6, $0C
-	dc.b	nC6, $0B, nB5, $0B, nE6, $17, nE6, $05, nF6, $06, nG6, $06
+	dc.b	nC6, $0B, nB5, $0B, nE6, $17
+	smpsModSet          $07, $01, $03, $05
+	dc.b	nE6, $05, nF6, $06, nG6, $06
+	smpsModSet          $0C, $01, $04, $06
 	dc.b	nG6, $11, nF6, $0B, nE6, $0B, nG6, $0C, nG6, $11, nF6, $11
 	dc.b	nE6, $0B, nF6, $11
 	smpsModSet          $0C, $01, $04, $06
 	dc.b	nC6, $1C
-	smpsModSet          $07, $01, $03, $05
 	dc.b	nC6, $11, nF6, $11, nE6, $0C
 	dc.b	nE6, $0B, nD6, $0B, nC6, $0C, nB5, $0B, nC6, $11, nD6, $11
 	dc.b	nC6, $0B, nC6, $11, nD6, $11, nC6, $0C, nC6, $11, nD6, $11
