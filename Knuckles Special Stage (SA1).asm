@@ -311,7 +311,7 @@ Snd_Knuckles_Special_Stage_FM2INIT:
     	smpsModSet          $07, $01, $03, $05
     	dc.b    nC6, $05
     	dc.b    nE5, $06, nG5, $06, nAb5, $06
-	smpsModSet          $18, $01, $05, $07
+    	smpsModSet          $07, $01, $05, $07
 	dc.b	nA5, $18
     	smpsModSet          $07, $01, $03, $05
 	dc.b	nE5, $05, nA5, $06
