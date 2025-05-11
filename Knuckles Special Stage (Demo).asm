@@ -485,7 +485,7 @@ Snd_Knuckles_Special_Demo_PSG1INIT:
 	dc.b	nRst, $6C, nC2, $0B, nG2, $0C, nBb2, $0B, nG2, $06, nA2, $22
 	dc.b	nRst, $6B, nC2, $0C, nG2, $0B, nBb2, $0B, nG2, $06, nA2, $22
 	dc.b	nRst, $5C, nRst, $5C, nRst, $5C, nRst, $5C, nRst, $5C, nRst, $5C
-	dc.b    nRst, $5C, nRst, $5C, nB2, $33, nC3
+	dc.b    nRst, $5C, nRst, $5C, nRst, $33, nC3
 	dc.b	$2E, nB2, $2D, nBb2, $2D, nA2, $2E, nAb2, $22, nAb2, $0B, nG2
 	dc.b	$0B, nG2, $0C, nA2, $0B, nG2, $0B, nC3, $2E, nB2, $2D, nBb2
 	dc.b	$2D, nA2, $2D, nAb2, $22, nAb2, $0C, nG2, $0B, nG2, $0B, nG2
