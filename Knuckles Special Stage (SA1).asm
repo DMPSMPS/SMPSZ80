@@ -485,7 +485,7 @@ Snd_Knuckles_Special_Stage_PSG1INIT:
 	dc.b	nRst, $70, nC2, $0C, nG2, $0C, nBb2, $0B, nG2, $06, nA2, $24
 	dc.b	nRst, $70, nC2, $0B, nG2, $0C, nBb2, $0C, nG2, $06, nA2, $23
 	dc.b	nRst, $55, nRst, $55, nRst, $55, nRst, $55, nRst, $55, nRst, $55
-	dc.b	nRst, $55, nRst, $55, nRst, $55, nB2, $35
+	dc.b	nRst, $55, nRst, $55, nRst, $55, nRst, $35
 	dc.b	nC3, $2F, nB2, $30, nBb2, $2F, nA2, $2F, nAb2, $23, nAb2, $0C
 	dc.b	nG2, $0C, nG2, $0B, nA2, $0C, nG2, $0C, nC3, $2F, nB2, $2F
 	dc.b	nBb2, $2F, nA2, $2F, nAb2, $24, nAb2, $0B, nG2, $0C, nG2, $0C
