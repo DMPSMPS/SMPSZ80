@@ -417,7 +417,7 @@ Snd_Supersonic_Loop07:
 	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
 	smpsSetvoice        $02
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $14
+	smpsFMAlterVol        $1A
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
 	dc.b	nB3, $01
@@ -483,7 +483,7 @@ Snd_Supersonic_Loop07:
 	dc.b	nE5, $01
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	smpsFMAlterVol        $0B
+	smpsFMAlterVol        $05
 	smpsJump	Snd_Supersonic_FM5
 
 ; PSG1 Data
