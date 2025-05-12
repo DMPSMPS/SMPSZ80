@@ -8,8 +8,8 @@ Snd_LBZ2_Header:
 	smpsHeaderFM        Snd_LBZ2_FM1,	$00, $0C
 	smpsHeaderFM        Snd_LBZ2_FM2,	$00, $0F
 	smpsHeaderFM        Snd_LBZ2_FM3,	$00, $13
-	smpsHeaderFM        Snd_LBZ2_FM4,	$00, $19
-	smpsHeaderFM        Snd_LBZ2_FM5,	$00, $19
+	smpsHeaderFM        Snd_LBZ2_FM4,	$00, $18
+	smpsHeaderFM        Snd_LBZ2_FM5,	$00, $18
 	smpsHeaderPSG       Snd_LBZ2_PSG1,	$0C, $04, $00, sTone_0C
 	smpsHeaderPSG       Snd_LBZ2_PSG2,	$0C, $04, $00, sTone_0C
 	smpsHeaderPSG       Snd_LBZ2_PSG3,	$0C, $04, $00, sTone_0C
@@ -461,7 +461,7 @@ Snd_LBZ2_Loop12:
 Snd_LBZ2_FM4:
 	smpsSetvoice        $04
 	smpsAlterNote       $01
-	smpsModSet          $0A, $01, $03, $06
+	smpsModSet          $0A, $01, $06, $06
 	smpsPan             panRight, $00
 	dc.b	nE4, $02, nRst, $01, nG4, $02, nRst, $01, nA4, $02, nRst, $01
 	dc.b	nC5, $02, nRst, $01, nE5, $02, nRst, $01, nC5, $02, nRst, $01
@@ -600,7 +600,7 @@ Snd_LBZ2_FM4:
 Snd_LBZ2_FM5:
 	smpsSetvoice        $04
 	smpsAlterNote       $FF
-	smpsModSet          $0A, $01, $03, $06
+	smpsModSet          $0A, $01, $06, $06
 	smpsPan             panLeft, $00
 	dc.b	nE4, $02, nRst, $01, nG4, $02, nRst, $01, nA4, $02, nRst, $01
 	dc.b	nC5, $02, nRst, $01, nE5, $02, nRst, $01, nC5, $02, nRst, $01
