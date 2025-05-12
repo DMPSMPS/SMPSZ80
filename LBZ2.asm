@@ -599,7 +599,7 @@ Snd_LBZ2_FM4:
 ; FM5 Data
 Snd_LBZ2_FM5:
 	smpsSetvoice        $04
-	smpsAlernote        $FF
+	smpsAlternote       $FF
 	smpsModSet          $0A, $01, $03, $06
 	smpsPan             panLeft, $00
 	dc.b	nE4, $02, nRst, $01, nG4, $02, nRst, $01, nA4, $02, nRst, $01
