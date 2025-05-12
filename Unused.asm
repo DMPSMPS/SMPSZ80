@@ -61,7 +61,9 @@ Snd_Unused_Loop16:
 	smpsModOff
 	dc.b	nC3, $12, nRst, $12, nE3, $06, nD3, $06, nRst, $06, nA2, $0C
 	dc.b	nFs2, $0C, nA2, $12, nRst, $18, nEb3, $09, nE3, $09, nFs3, $06
-	dc.b	nFs3, $0C, nG3, $06, nE3, $18, nRst, $06
+	dc.b	nFs3, $0C, nG3, $06
+	smpsFMAlterVol        $FF
+	DC,B	nE3, $18, nRst, $06
 	smpsFMAlterVol        $FF
 	dc.b	nCs3, $18
 	smpsFMAlterVol        $FF
@@ -69,9 +71,9 @@ Snd_Unused_Loop16:
 	dc.b	nFs3, $09, nAb3, $06
 	smpsModSet          $18, $01, $FE, $FF
 	smpsFMAlterVol        $FF
-	dc.b	nB3, $60
+	dc.b	nB3, $20, smpsNoAttack, $21
 	smpsModOff
-	smpsFMAlterVol        $03
+	smpsFMAlterVol        $04
 	dc.b	nA4, $12, nAb4, $12, nE4, $30, nAb4, $0C, nA4, $08, nRst, $04
 	dc.b	nA4, $06, nAb4, $0C, nA4, $06, nAb4, $06, nE4, $2A, nFs4, $08
 	dc.b	nRst, $04, nG4, $12, nFs4, $12, nE4, $0C, nA4, $0C, nG4, $0C
