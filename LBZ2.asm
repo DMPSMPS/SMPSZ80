@@ -8,8 +8,8 @@ Snd_LBZ2_Header:
 	smpsHeaderFM        Snd_LBZ2_FM1,	$00, $0C
 	smpsHeaderFM        Snd_LBZ2_FM2,	$00, $0F
 	smpsHeaderFM        Snd_LBZ2_FM3,	$00, $13
-	smpsHeaderFM        Snd_LBZ2_FM4,	$00, $0F
-	smpsHeaderFM        Snd_LBZ2_FM5,	$00, $0F
+	smpsHeaderFM        Snd_LBZ2_FM4,	$00, $12
+	smpsHeaderFM        Snd_LBZ2_FM5,	$00, $12
 	smpsHeaderPSG       Snd_LBZ2_PSG1,	$0C, $04, $00, sTone_0C
 	smpsHeaderPSG       Snd_LBZ2_PSG2,	$0C, $04, $00, sTone_0C
 	smpsHeaderPSG       Snd_LBZ2_PSG3,	$0C, $04, $00, sTone_0C
