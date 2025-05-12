@@ -460,7 +460,7 @@ Snd_LBZ2_Loop12:
 ; FM4 Data
 Snd_LBZ2_FM4:
 	smpsSetvoice        $04
-	smpsAlternote       $01
+	smpsAlterNote       $01
 	smpsModSet          $0A, $01, $03, $06
 	smpsPan             panRight, $00
 	dc.b	nE4, $02, nRst, $01, nG4, $02, nRst, $01, nA4, $02, nRst, $01
@@ -599,7 +599,7 @@ Snd_LBZ2_FM4:
 ; FM5 Data
 Snd_LBZ2_FM5:
 	smpsSetvoice        $04
-	smpsAlternote       $FF
+	smpsAlterNote       $FF
 	smpsModSet          $0A, $01, $03, $06
 	smpsPan             panLeft, $00
 	dc.b	nE4, $02, nRst, $01, nG4, $02, nRst, $01, nA4, $02, nRst, $01
