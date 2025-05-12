@@ -1,21 +1,21 @@
-s3p8_Header:
+Snd_CNZ2_Header:
 	smpsHeaderStartSong 3
 	smpsHeaderVoiceUVB
 	smpsHeaderChan      $06, $03
 	smpsHeaderTempo     $01, $1F
 
-	smpsHeaderDAC       s3p8_DAC
-	smpsHeaderFM        s3p8_FM4,	$18, $0A
-	smpsHeaderFM        s3p8_FM3,	$18, $11
-	smpsHeaderFM        s3p8_FM5,	$0C, $11
-	smpsHeaderFM        s3p8_FM1,	$0C, $0F
-	smpsHeaderFM        s3p8_FM2,	$0C, $0F
-	smpsHeaderPSG       s3p8_PSG1,	$F4, $04, $00, sTone_0C
-	smpsHeaderPSG       s3p8_PSG2,	$F4, $04, $00, sTone_0C
-	smpsHeaderPSG       s3p8_PSG3,	$00, $03, $00, sTone_0C
+	smpsHeaderDAC       Snd_CNZ2_DAC
+	smpsHeaderFM        Snd_CNZ2_FM4,	$18, $0A
+	smpsHeaderFM        Snd_CNZ2_FM3,	$18, $11
+	smpsHeaderFM        Snd_CNZ2_FM5,	$0C, $11
+	smpsHeaderFM        Snd_CNZ2_FM1,	$0C, $0F
+	smpsHeaderFM        Snd_CNZ2_FM2,	$0C, $0F
+	smpsHeaderPSG       Snd_CNZ2_PSG1,	$F4, $04, $00, sTone_0C
+	smpsHeaderPSG       Snd_CNZ2_PSG2,	$F4, $04, $00, sTone_0C
+	smpsHeaderPSG       Snd_CNZ2_PSG3,	$00, $03, $00, sTone_0C
 
 ; DAC Data
-s3p8_DAC:
+Snd_CNZ2_DAC:
 	dc.b	dSnareS3, $0C, dClapS3, dSnareS3, $06, dClapS3, $0C, dClapS3, $06, dSnareS3, dClapS3, dClapS3
 	dc.b	$0C, dSnareS3, dClapS3, dSnareS3, dClapS3, dSnareS3, $06, dClapS3, $0C, dSnareS3
 	smpsPan             panLeft, $00
@@ -69,10 +69,10 @@ s3p8_DAC:
 	dc.b	$12, dKickS3, $0C, dKickS3, dKickS3, $06, dSnareS3, $18, dSnareS3, $06, dSnareS3, $0C
 	dc.b	dSnareS3, $06, dSnareS3, $0C, dSnareS3, $06, dSnareS3, $0C, dSnareS3, $06, dSnareS3, $12
 	dc.b	dSnareS3, $06, dSnareS3, dSnareS3, $04, nRst, $02
-	smpsJump            s3p8_DAC
+	smpsJump            Snd_CNZ2_DAC
 
 ; FM1 Data
-s3p8_FM1:
+Snd_CNZ2_FM1:
 	smpsChangeTransposition 	    -$0C
 	smpsPan             panCenter, $00
 	smpsSetvoice        $1B
@@ -113,9 +113,10 @@ s3p8_FM1:
 	dc.b	nE4, $10, nRst, $02, nC4, $04, nRst, $26, nC4, $0A, nRst, $02
 	dc.b	nBb3, $04, nRst, $02, nBb3, $04, nRst, $08, nBb3, $04, nRst, $08
 	dc.b	nBb3, $04, nRst, $08, nBb3, $04, nRst, $02, nBb3, $04, nRst, $2C
-	smpsSetvoice        $17
-	smpsAlterNote       $FB
-	smpsModSet          $0F, $01, $03, $05
+	smpsFMAlterVol	    $07
+	smpsSetvoice        $04
+	smpsAlterNote       $FF
+	smpsModSet          $0A, $01, $06, $06
 	smpsPan             panLeft, $00
 	dc.b	nC3, $16, nRst, $02, nD3, $10, nRst, $02, nEb3, $04, nRst, $08
 	dc.b	nEb3, $04, nRst, $02, nD3, $0A, nRst, $02, nEb3, $0A, nRst, $02
@@ -136,6 +137,7 @@ s3p8_FM1:
 	dc.b	nG3, $0A, nRst, $02, nF3, $04, nRst, $02, nG3, $04, nRst, $20
 	dc.b	nFs3, $02, nG3, nRst, $08, nF3, $04, nRst, $02, nG3, $0A, nRst
 	dc.b	$02, nF3, $0A, nRst, $02
+	smpsFMAlterVol	    -$07
 	smpsSetvoice        $06
 	smpsDetune          $01
 	smpsModSet          $0A, $01, $03, $06
@@ -164,10 +166,10 @@ s3p8_FM1:
 	dc.b	$0C, nG3, $02, nF3, nEb3, nD3, nC3, nBb2, nA2, nRst, $0A
 	smpsChangeTransposition	    -$0C
 	smpsChangeTransposition	    $0C
-	smpsJump            s3p8_FM1
+	smpsJump            Snd_CNZ2_FM1
 
 ; FM2 Data
-s3p8_FM2:
+Snd_CNZ2_FM2:
 	smpsPan             panCenter, $00
 	smpsSetvoice        $06
 	smpsDetune          $FF
@@ -233,10 +235,11 @@ s3p8_FM2:
 	dc.b	nD3, $04, nRst, $08, nD3, $04, nRst, $08, nD3, $04, nRst, $02
 	dc.b	nD3, $04, nRst, $1A, nA2, $04, nRst, $02, nBb2, $04, nRst, $02
 	dc.b	nC3, $04, nRst, $02
-	smpsSetvoice        $17
-	smpsAlterNote       $05
-	smpsModSet          $0F, $01, $03, $05
+	smpsSetvoice        $04
+	smpsAlterNote       $01
+	smpsModSet          $0A, $01, $06, $06
 	smpsPan             panRight, $00
+	smpsFMAlterVol	    $07
 	dc.b	nAb2, $16, nRst, $02, nBb2, $10, nRst, $02, nC3, $04, nRst, $08
 	dc.b	nC3, $04, nRst, $02, nBb2, $0A, nRst, $02, nC3, $0A, nRst, $02
 	dc.b	nAb2, $0A, nRst, $02, nG2, $28, nRst, $02, nBb2, $04, nRst, $08
@@ -256,6 +259,7 @@ s3p8_FM2:
 	dc.b	nAb2, $0A, nRst, $02, nAb2, $04, nRst, $02, nAb2, $04, nRst, $20
 	dc.b	nD3, $04, nRst, $08, nD3, $04, nRst, $02, nD3, $0A, nRst, $02
 	dc.b	nD3, $0A, nRst, $02
+	smpsFMAlterVol	    -$07
 	smpsSetvoice        $06
 	smpsDetune          $FF
 	smpsModSet          $0A, $01, $03, $06
@@ -282,13 +286,13 @@ s3p8_FM2:
 	smpsModSet          $0A, $01, $06, $06
 	dc.b	nEb3, $06, nEb3, nRst, nEb3, nEb3, nRst, nEb3, nEb3, nRst, nEb3, nEb3
 	dc.b	$0C, nD3, $02, nC3, nBb2, nA2, nG2, nF2, nEb2, nRst, $0A
-	smpsJump            s3p8_FM2
+	smpsJump            Snd_CNZ2_FM2
 
 ; FM3 Data
-s3p8_FM3:
+Snd_CNZ2_FM3:
 	smpsPan             panLeft, $00
 
-s3p8_Jump01:
+Snd_CNZ2_Jump01:
 	smpsPan             panLeft, $00
 	smpsSetvoice        $11
 	smpsChangeTransposition	    $0C
@@ -368,10 +372,10 @@ s3p8_Jump01:
 	smpsAlterNote       $04
 	smpsModSet          $0F, $01, $FA, $05
 	dc.b	nEb3, $06, nF3, $0C
-	smpsJump            s3p8_Jump01
+	smpsJump            Snd_CNZ2_Jump01
 
 ; FM4 Data
-s3p8_FM4:
+Snd_CNZ2_FM4:
 	smpsSetvoice        $14
 	smpsDetune          $00
 	smpsModSet          $02, $01, $01, $02
@@ -433,15 +437,15 @@ s3p8_FM4:
 	dc.b	nRst, $02, nBb0, $16, nRst, $02, nEb1, $04, nRst, $08, nEb1, $04
 	dc.b	nRst, $08, nEb1, $04, nRst, $02, nBb0, $0A, nRst, $02, nEb1, $0A
 	dc.b	nRst, $02, nB1, $12, nA1, nB1, nA1, $06, nB1, nRst, $1E
-	smpsJump            s3p8_FM4
+	smpsJump            Snd_CNZ2_FM4
 
 ; FM5 Data
-s3p8_FM5:
+Snd_CNZ2_FM5:
 	smpsChangeTransposition	        $0C
 	smpsPan             panRight, $00
 	dc.b	nRst, $02
 
-s3p8_Jump00:
+Snd_CNZ2_Jump00:
 	smpsPan             panRight, $00
 	smpsChangeTransposition		$0C
 	smpsSetvoice        $11
@@ -525,13 +529,13 @@ s3p8_Jump00:
 	smpsModSet          $0F, $01, $06, $05
 	smpsFMAlterVol      -$04
 	dc.b	nEb3, $06, nF3, $0C
-	smpsJump            s3p8_Jump00
+	smpsJump            Snd_CNZ2_Jump00
 
 ; PSG1 Data
-s3p8_PSG1:
+Snd_CNZ2_PSG1:
 	smpsPSGvoice        sTone_0A
 
-s3p8_Jump03:
+Snd_CNZ2_Jump03:
 	dc.b	nFs3, $04, nRst, $08, nFs3, $04, nRst, $08, nEb3, $10, nRst, $02
 	dc.b	nF3, $04, nRst, $08, nF3, $04, nRst, $08, nF3, $04, nRst, $08
 	dc.b	nD3, $04, nRst, $02, nD3, $0A, nRst, $02, nFs3, $04, nRst, $08
@@ -629,14 +633,14 @@ s3p8_Jump03:
 	dc.b	$04, nRst, $02, nB3, $04, nRst, $02, nB4, $04, nRst, $02, nB3
 	dc.b	$04, nRst, $02, nB3, $04, nRst, $02, nB4, $04, nRst, $02, nB3
 	dc.b	$04, nRst, $02, nB4, $04, nRst, $20
-	smpsJump            s3p8_Jump03
+	smpsJump            Snd_CNZ2_Jump03
 
 ; PSG2 Data
-s3p8_PSG2:
+Snd_CNZ2_PSG2:
 	smpsPSGvoice        sTone_0A
 	smpsDetune          $01
 
-s3p8_Jump02:
+Snd_CNZ2_Jump02:
 	dc.b	nFs3, $04, nRst, $08, nFs3, $04, nRst, $08, nEb3, $10, nRst, $02
 	dc.b	nF3, $04, nRst, $08, nF3, $04, nRst, $08, nF3, $04, nRst, $08
 	dc.b	nD3, $04, nRst, $02, nD3, $0A, nRst, $02, nFs3, $04, nRst, $08
@@ -734,22 +738,22 @@ s3p8_Jump02:
 	dc.b	$04, nRst, $02, nB3, $04, nRst, $02, nB4, $04, nRst, $02, nB3
 	dc.b	$04, nRst, $02, nB3, $04, nRst, $02, nB4, $04, nRst, $02, nB3
 	dc.b	$04, nRst, $02, nB4, $04, nRst, $20
-	smpsJump            s3p8_Jump02
+	smpsJump            Snd_CNZ2_Jump02
 
 ; PSG3 Data
-s3p8_PSG3:
+Snd_CNZ2_PSG3:
 	smpsPSGvoice        sTone_02
 	smpsPSGform         $E7
 	dc.b	nRst, $60, nRst, $60, nRst, $60, nRst, $60
 
-s3p8_Loop00:
+Snd_CNZ2_Loop00:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_08
 	dc.b	nMaxPSG1, $0C
-	smpsLoop            $01, $0D, s3p8_Loop00
+	smpsLoop            $01, $0D, Snd_CNZ2_Loop00
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
@@ -759,14 +763,14 @@ s3p8_Loop00:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $36
 
-s3p8_Loop01:
+Snd_CNZ2_Loop01:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_08
 	dc.b	nMaxPSG1, $0C
-	smpsLoop            $01, $0D, s3p8_Loop01
+	smpsLoop            $01, $0D, Snd_CNZ2_Loop01
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
@@ -776,7 +780,7 @@ s3p8_Loop01:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $36
 
-s3p8_Loop02:
+Snd_CNZ2_Loop02:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
@@ -809,9 +813,9 @@ s3p8_Loop02:
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
-	smpsLoop            $01, $08, s3p8_Loop02
+	smpsLoop            $01, $08, Snd_CNZ2_Loop02
 
-s3p8_Loop03:
+Snd_CNZ2_Loop03:
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
@@ -836,7 +840,7 @@ s3p8_Loop03:
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_08
 	dc.b	nMaxPSG1, $0C
-	smpsLoop            $01, $06, s3p8_Loop03
+	smpsLoop            $01, $06, Snd_CNZ2_Loop03
 	smpsPSGvoice        sTone_01
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_01
@@ -861,4 +865,4 @@ s3p8_Loop03:
 	dc.b	nMaxPSG1, $06
 	smpsPSGvoice        sTone_08
 	dc.b	nMaxPSG1, $60, $0C
-	smpsJump            s3p8_PSG3
+	smpsJump            Snd_CNZ2_PSG3
