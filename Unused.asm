@@ -63,7 +63,7 @@ Snd_Unused_Loop16:
 	dc.b	nFs2, $0C, nA2, $12, nRst, $18, nEb3, $09, nE3, $09, nFs3, $06
 	dc.b	nFs3, $0C, nG3, $06
 	smpsFMAlterVol        $FF
-	DC,B	nE3, $18, nRst, $06
+	dc.b	nE3, $18, nRst, $06
 	smpsFMAlterVol        $FF
 	dc.b	nCs3, $18
 	smpsFMAlterVol        $FF
