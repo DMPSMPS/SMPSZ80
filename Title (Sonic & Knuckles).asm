@@ -1215,4 +1215,4 @@ Snd_THEMEOFSKALBUM_Voices:
 	smpsVcDecayRate2    $0A, $00, $00, $00
 	smpsVcDecayLevel    $00, $00, $0F, $00
 	smpsVcReleaseRate   $0F, $0F, $0F, $0F
-	smpsVcTotalLevel    $1B, $22, $1D, $22
+	smpsVcTotalLevel    $8C, $13, $8C, $11
