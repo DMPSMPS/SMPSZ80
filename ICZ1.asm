@@ -7,8 +7,8 @@ Snd_ICZ1_Header:
 	smpsHeaderDAC       Snd_ICZ1_DAC
 	smpsHeaderFM        Snd_ICZ1_FM1,	$18, $18
 	smpsHeaderFM        Snd_ICZ1_FM2,	$0C, $10
-	smpsHeaderFM        Snd_ICZ1_FM3,	$0C, $15
-	smpsHeaderFM        Snd_ICZ1_FM4,	$0C, $15
+	smpsHeaderFM        Snd_ICZ1_FM3,	$0C, $14
+	smpsHeaderFM        Snd_ICZ1_FM4,	$0C, $14
 	smpsHeaderFM        Snd_ICZ1_FM5,	$18, $1B
 	smpsHeaderPSG       Snd_ICZ1_PSG1,	$00, $03, $00, $00
 	smpsHeaderPSG       Snd_ICZ1_PSG2,	$00, $05, $00, $00
