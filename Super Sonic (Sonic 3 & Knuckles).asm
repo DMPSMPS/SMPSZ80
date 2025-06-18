@@ -493,7 +493,7 @@ Snd_Supersonic_PSG1:
 ; PSG2 Data
 Snd_Supersonic_PSG2:
 	smpsAlterNote       $FF
-	dc.b	nRst, $02
+	dc.b	nRst, $03
 	smpsJump	Snd_Supersonic_PSG1	
 
 ; PSG3 Data
