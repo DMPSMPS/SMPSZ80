@@ -12,7 +12,7 @@ Snd_Supersonic_Header:
 	smpsHeaderFM        Snd_Supersonic_FM5,		$00, $13
 	smpsHeaderPSG       Snd_Supersonic_PSG1,	$0C, $01, $00, sTone_11
 	smpsHeaderPSG       Snd_Supersonic_PSG2,	$0C, $01, $00, sTone_11
-	smpsHeaderPSG       Snd_Supersonic_PSG3,	$0C, $00, $00, sTone_0F
+	smpsHeaderPSG       Snd_Supersonic_PSG3,	$23, $00, $00, sTone_0F
 
 ; DAC Data
 Snd_Supersonic_DAC:
@@ -499,330 +499,330 @@ Snd_Supersonic_PSG2:
 ; PSG3 Data
 Snd_Supersonic_PSG3:
 	smpsPSGform         $E7
-	dc.b	nMaxPSG, $09, nMaxPSG, $0F, nMaxPSG, $09, nMaxPSG, $0F, nMaxPSG, $09, nMaxPSG, $0F
-	dc.b	nMaxPSG, $09, nMaxPSG, $0F, nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0F, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0F, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0F
+	dc.b	(nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0F, (nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $09, nMaxPSG, $09, nMaxPSG, $0C, nMaxPSG, $12, nMaxPSG, $09, nMaxPSG, $09
-	dc.b	nMaxPSG, $0C, nMaxPSG, $12, nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0C, (nMaxPSG2-$23)&$FF, $12, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $09
+	dc.b	(nMaxPSG2-$23)&$FF, $0C, (nMaxPSG2-$23)&$FF, $12, (nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	(nMaxPSG2-$23)&$FF, $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $09, nMaxPSG, $09, nMaxPSG, $0C, nMaxPSG, $12, nMaxPSG, $09, nMaxPSG, $09
-	dc.b	nMaxPSG, $0C, nMaxPSG, $12
+	dc.b	(nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $0C, (nMaxPSG2-$23)&$FF, $12, (nMaxPSG2-$23)&$FF, $09, (nMaxPSG2-$23)&$FF, $09
+	dc.b	(nMaxPSG2-$23)&$FF, $0C, (nMaxPSG2-$23)&$FF, $12
 	smpsJump	Snd_Supersonic_PSG3
 
 Snd_Supersonic_Voices:
