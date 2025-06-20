@@ -950,4 +950,4 @@ Snd_Supersonic_Voices:
 	smpsVcDecayRate2    $00, $00, $00, $00
 	smpsVcDecayLevel    $00, $00, $00, $00
 	smpsVcReleaseRate   $00, $00, $00, $00
-	smpsVcTotalLevel    $0F, $13, $2D, $24
+	smpsVcTotalLevel    $0A, $13, $2D, $24
