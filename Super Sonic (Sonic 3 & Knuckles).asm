@@ -195,7 +195,6 @@ Snd_Supersonic_FM3:
 	smpsModSet          $07, $01, $03, $05
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	smpsFMAlterVol        -$05
 	smpsFMAlterVol        -$0A
 	dc.b	nRst, $7F, nRst, $7F, nRst, $22, nCs5, $0C, nB4, $06, nA4, $06, nCs5, $06
 	dc.b	nB4, $06, nA4, $06, nAb4, $17, nRst, $01, nFs5, $0B, nRst, $01
@@ -208,7 +207,6 @@ Snd_Supersonic_FM3:
 	dc.b	nB4, $05, nRst, $01, nB4, $03, nCs5, $03, nD5, $06, nRst, $30
 	smpsSetvoice        $03
 	smpsPan             panCenter, $00
-	smpsFMAlterVol        $05
 	smpsFMAlterVol        $0A
 	smpsFMAlterVol        $1F
 	dc.b	nA3, $02
@@ -277,7 +275,6 @@ Snd_Supersonic_FM3:
 	dc.b	nRst, $7F, nRst, $41
 	smpsSetvoice        $01
 	smpsPan             panRight, $00
-	smpsFMAlterVol        -$05
 	smpsFMAlterVol        -$0A
 	dc.b	nCs5, $0C, nB4, $06, nA4, $06, nCs5, $06, nB4, $06, nA4, $06
 	dc.b	nAb4, $17, nRst, $01, nFs5, $0B, nRst, $01, nFs5, $05, nRst, $01
@@ -291,7 +288,6 @@ Snd_Supersonic_FM3:
 	smpsSetvoice        $03
 	smpsPan             panCenter, $00
 	smpsFMAlterVol        $0A
-	smpsFMAlterVol        $05
 	smpsFMAlterVol        $1F
 	dc.b	nA3, $02
 	smpsFMAlterVol        $FF
