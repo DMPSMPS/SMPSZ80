@@ -374,41 +374,22 @@ Snd_Supersonic_PSG2:
 	dc.b	nRst, $03
 	smpsJump            Snd_Supersonic_PSG1
 
-; PSG3 Data
 Snd_Supersonic_PSG3:
-	smpsPSGform         $E7
-	dc.b	(nMaxPSG2-$23)&$FF
-
+    smpsPSGform         $E7
 Snd_Supersonic_Loop14:
-	dc.b	$09,  $0F
-	smpsLoop            $00, $04, Snd_Supersonic_Loop14
-	dc.b	(nMaxPSG2-$23)&$FF
-
+    dc.b    nC4
+    dc.b    $09, $0F
+    smpsLoop    0,4,	Snd_Supersonic_Loop14
 Snd_Supersonic_Loop15:
-	dc.b	$06
-	smpsPSGvoice        sTone_12
-	dc.b	 $06
-	smpsPSGvoice        sTone_0F
-	smpsLoop            $00, $28, Snd_Supersonic_Loop15
-	dc.b	(nMaxPSG2-$23)&$FF
-
-Snd_Supersonic_Loop16:
-	dc.b	$09,  $09,  $0C,  $12
-	smpsLoop            $00, $02, Snd_Supersonic_Loop16
-	dc.b	(nMaxPSG2-$23)&$FF
-
-Snd_Supersonic_Loop17:
-	dc.b	$06
-	smpsPSGvoice        sTone_12
-	dc.b	 $06
-	smpsPSGvoice        sTone_0F
-	smpsLoop            $00, $28, Snd_Supersonic_Loop17
-	dc.b	(nMaxPSG2-$23)&$FF
-
-Snd_Supersonic_Loop18:
-	dc.b	$09,  $09,  $0C,  $12
-	smpsLoop            $00, $02, Snd_Supersonic_Loop18
-	smpsJump            Snd_Supersonic_PSG3
+    dc.b    $06
+    smpsPSGvoice        sTone_12
+    dc.b    $06
+    smpsPSGvoice        sTone_0F
+    smpsLoop    0,40,	Snd_Supersonic_Loop15
+    dc.b    $09, $09, $0C, $12, $09, $09
+    dc.b    $0C, $12
+    smpsLoop    1,2,	Snd_Supersonic_Loop15
+    smpsJump    Snd_Supersonic_Loop14
 
 Snd_Supersonic_Voices:
 ;	Voice $00
