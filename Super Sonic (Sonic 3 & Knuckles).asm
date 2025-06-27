@@ -337,6 +337,7 @@ Snd_Supersonic_PSG2:
 	dc.b	nRst, $03
 	smpsJump            Snd_Supersonic_PSG1
 
+; PSG3 Data
 Snd_Supersonic_PSG3:
     smpsPSGform         $E7
 Snd_Supersonic_Loop14:
