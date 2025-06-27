@@ -138,7 +138,7 @@ Snd_Supersonic_FM3:
 Snd_Supersonic_Call00:
 	smpsPan             panRight, $00
 	smpsSetvoice        $01
-	smpsAlterVol        $F1
+	smpsAlterVol        $F6
 	dc.b	nCs5, $0C, nB4, $06, nA4, $06, nCs5, $06, nB4, $06, nA4, $06
 	dc.b	nAb4, $17, nRst, $01, nFs5, $0B
 
@@ -154,7 +154,7 @@ Snd_Supersonic_Loop1B:
 	dc.b	nRst, $30
 	smpsSetvoice        $03
 	smpsPan             panCenter, $00
-	smpsAlterVol        $2E
+	smpsAlterVol        $29
 	dc.b	nA3, $02
 	smpsAlterVol        $FF
 	dc.b	nB3, $01
