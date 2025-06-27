@@ -131,7 +131,7 @@ Snd_Supersonic_FM3:
 	smpsModSet          $07, $01, $03, $05
 	dc.b	nRst, $7F, nRst, $7F, nRst, $22
 	smpsCall            Snd_Supersonic_Call00
-	smpsCall            Snd_Supersonic_Call01
+	dc.b	nRst, $7F, nRst, $41
 	smpsCall            Snd_Supersonic_Call00
 	smpsJump            Snd_Supersonic_FM3
 
@@ -154,8 +154,7 @@ Snd_Supersonic_Loop1B:
 	dc.b	nRst, $30
 	smpsSetvoice        $03
 	smpsPan             panCenter, $00
-	smpsAlterVol        $0F
-	smpsAlterVol        $1F
+	smpsAlterVol        $2E
 	dc.b	nA3, $02
 	smpsAlterVol        $FF
 	dc.b	nB3, $01
@@ -221,10 +220,6 @@ Snd_Supersonic_Loop1B:
 	dc.b	nE5, $01
 	smpsReturn
 
-Snd_Supersonic_Call01:
-	dc.b	nRst, $7F, nRst, $41
-	smpsReturn
-
 ; FM4 Data
 Snd_Supersonic_FM4:
 	smpsModSet          $07, $01, $03, $05
@@ -235,9 +230,17 @@ Snd_Supersonic_Loop09:
 	dc.b	nE4, $06, nRst, $03, nE4, $09, nRst, $06
 	smpsLoop            $00, $02, Snd_Supersonic_Loop09
 	dc.b	nA4, $06, nRst, $03, nFs4, $09, nRst, $06, nE4, $06, nRst, $06
-	dc.b	nE4, $09, nRst, $09, nE4, $06, nRst, $06, nE4, $06, nRst, $06
-	dc.b	nD4, $06, nRst, $06, nD4, $06
+	dc.b	nE4, $09
+	dc.b	nRst, $09
+	smpsCall	Snd_Supersonic_Call03	
+	dc.b	nRst, $06	
+	smpsCall	Snd_Supersonic_Call03	
+	smpsJump            Snd_Supersonic_FM4
 
+Snd_Supersonic_Call03:
+	dc.b	nE4, $06, nRst, $06, nE4, $06, nRst, $06
+	dc.b	nD4, $06, nRst, $06, nD4, $06
+	
 Snd_Supersonic_Loop0A:
 	dc.b	nRst, $06, nE4, $06
 	smpsLoop            $00, $06, Snd_Supersonic_Loop0A
@@ -264,28 +267,7 @@ Snd_Supersonic_Loop0C:
 	dc.b	nE4, $12
 	smpsModSet          $07, $01, $03, $05
 	smpsSetvoice        $02
-
-Snd_Supersonic_Loop0E:
-	dc.b	nRst, $06, nE4, $06, nRst, $06, nE4, $06, nRst, $06, nD4, $06
-	dc.b	nRst, $06, nD4, $06
-
-Snd_Supersonic_Loop0D:
-	dc.b	nRst, $06, nE4, $06
-	smpsLoop            $00, $06, Snd_Supersonic_Loop0D
-	dc.b	nRst, $06, nD4, $06, nRst, $06, nD4, $06, nRst, $06, nAb4, $06
-	dc.b	nRst, $06, nAb4, $06, nRst, $06, nFs4, $06, nRst, $06, nE4, $06
-	smpsLoop            $01, $02, Snd_Supersonic_Loop0E
-	dc.b	nRst, $06, nD4, $06, nRst, $06, nD4, $06, nRst, $06, nE4, $06
-	dc.b	nRst, $06, nE4, $06, nRst, $06, nFs4, $06, nRst, $06, nFs4, $06
-	dc.b	nRst, $06, nAb4, $06, nRst, $06, nAb4, $06, nRst, $30
-	smpsSetvoice        $05
-	smpsModSet          $2A, $01, $29, $00
-	dc.b	nE4, $1E, smpsNoAttack
-	smpsModSet          $01, $00, $00, $00
-	dc.b	nE4, $12
-	smpsModSet          $07, $01, $03, $05
-	smpsSetvoice        $02
-	smpsJump            Snd_Supersonic_FM4
+	smpsReturn
 
 ; FM5 Data
 Snd_Supersonic_FM5:
@@ -295,7 +277,12 @@ Snd_Supersonic_FM5:
 	dc.b	nB4, $06, nRst, $03, nAb4, $09, nRst, $06, nA4, $06, nRst, $03
 	dc.b	nB4, $09, nRst, $06, nCs5, $06, nRst, $03, nA4, $09, nRst, $06
 	dc.b	nB4, $06, nRst, $06, nAb4, $09, nRst, $09
+	smpsCall	Snd_Supersonic_Call04	
+	dc.b	nRst, $06
+	smpsCall	Snd_Supersonic_Call04	
+	smpsJump            Snd_Supersonic_FM5
 
+Snd_Supersonic_Call04:
 Snd_Supersonic_Loop05:
 	dc.b	nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06, nRst, $06
 	dc.b	nFs4, $06, nRst, $06, nAb4, $06, nRst, $06, nAb4, $06, nRst, $06
@@ -319,31 +306,7 @@ Snd_Supersonic_Loop04:
 	dc.b	nE4, $12
 	smpsModSet          $07, $01, $03, $05
 	smpsSetvoice        $02
-
-Snd_Supersonic_Loop08:
-	dc.b	nRst, $06, nA4, $06, nRst, $06, nA4, $06, nRst, $06, nFs4, $06
-	dc.b	nRst, $06, nFs4, $06, nRst, $06, nAb4, $06, nRst, $06, nAb4, $06
-	dc.b	nRst, $06, nB4, $06, nRst, $06, nB4, $06
-
-Snd_Supersonic_Loop06:
-	dc.b	nRst, $06, nA4, $06
-	smpsLoop            $00, $04, Snd_Supersonic_Loop06
-
-Snd_Supersonic_Loop07:
-	dc.b	nRst, $06, nB4, $06
-	smpsLoop            $00, $04, Snd_Supersonic_Loop07
-	smpsLoop            $01, $02, Snd_Supersonic_Loop08
-	dc.b	nRst, $06, nFs4, $06, nRst, $06, nFs4, $06, nRst, $06, nAb4, $06
-	dc.b	nRst, $06, nAb4, $06, nRst, $06, nA4, $06, nRst, $06, nA4, $06
-	dc.b	nRst, $06, nB4, $06, nRst, $06, nB4, $06, nRst, $30
-	smpsSetvoice        $05
-	smpsModSet          $2A, $01, $29, $00
-	dc.b	nE4, $1E, smpsNoAttack
-	smpsModSet          $01, $00, $00, $00
-	dc.b	nE4, $12
-	smpsModSet          $07, $01, $03, $05
-	smpsSetvoice        $02
-	smpsJump            Snd_Supersonic_FM5
+	smpsReturn
 
 ; PSG1 Data
 Snd_Supersonic_PSG1:
@@ -374,7 +337,6 @@ Snd_Supersonic_PSG2:
 	dc.b	nRst, $03
 	smpsJump            Snd_Supersonic_PSG1
 
-; PSG3 Data
 Snd_Supersonic_PSG3:
     smpsPSGform         $E7
 Snd_Supersonic_Loop14:
