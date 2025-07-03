@@ -300,6 +300,7 @@ Snd_Supersonic_Loop04:
 	dc.b	nFs4, $06, nRst, $06, nFs4, $06, nRst, $06, nAb4, $06, nRst, $06
 	dc.b	nAb4, $06, nRst, $06, nA4, $06, nRst, $06, nA4, $06, nRst, $06
 	dc.b	nB4, $06, nRst, $06, nB4, $06, nRst, $30
+	smpsSetvoice        $05
 	smpsModSet          $2A, $01, $29, $00
 	dc.b	nE4, $1E, smpsNoAttack
 	smpsModSet          $01, $00, $00, $00
