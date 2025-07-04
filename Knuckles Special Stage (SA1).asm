@@ -12,7 +12,7 @@ Snd_Knuckles_SS_SADC_Header:
 	smpsHeaderFM        Snd_Knuckles_SS_SADC_FM5,	$04, $10
 	smpsHeaderPSG       Snd_Knuckles_SS_SADC_PSG1,	$10, $06, $00, sTone_06
 	smpsHeaderPSG       Snd_Knuckles_SS_SADC_PSG2,	$10, $07, $00, sTone_04
-	smpsHeaderPSG       Snd_Knuckles_SS_SADC_PSG3,	$0C, $01, $00, sTone_12
+	smpsHeaderPSG       Snd_Knuckles_SS_SADC_PSG3,	$23, $01, $00, sTone_12
 
 ; DAC Data
 Snd_Knuckles_SS_SADC_DAC:
