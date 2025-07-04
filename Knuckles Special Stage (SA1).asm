@@ -506,412 +506,412 @@ Snd_Knuckles_SS_SADC_PSG2:
 ; PSG3 Data
 Snd_Knuckles_SS_SADC_PSG3:
 	smpsPSGform         $E7
-	dc.b	nMaxPSG, $12, nMaxPSG, $1E, nMaxPSG, $12, nMaxPSG, $12, nMaxPSG, $0C, nMaxPSG, $12
-	dc.b	nMaxPSG, $1E, nMaxPSG, $12, nMaxPSG, $12, nMaxPSG, $06, nMaxPSG, $12
+	dc.b	(nMaxPSG2-$23)&$FF, $12,  $1E,  $12,  $12,  $0C,  $12
+	dc.b	 $1E,  $12,  $12,  $06,  $12
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06,  $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $12
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGvoice        sTone_12
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $18, nMaxPSG, $0C
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
-	smpsPSGvoice        sTone_12
-	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
-	smpsPSGvoice        sTone_0F
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06,  $06,  $06,  $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $0C
+	dc.b	 $18,  $0C
+	smpsPSGAlterVol     $01
+	dc.b	 $06
 	smpsPSGvoice        sTone_0F
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $12
-	smpsPSGvoice        sTone_0F
+	dc.b	 $06,  $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06
+	smpsPSGAlterVol     $FE
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
-	smpsPSGvoice        sTone_12
-	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C
-	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
-	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $18
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $0C
-	smpsPSGvoice        sTone_0F
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $06
+	smpsPSGvoice        sTone_0F
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGvoice        sTone_12
+	dc.b	 $12
+	smpsPSGvoice        sTone_0F
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06,  $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06,  $06,  $06
+	smpsPSGvoice        sTone_12
+	smpsPSGAlterVol     $FF
+	dc.b	 $0C
+	smpsPSGvoice        sTone_0F
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FE
+	dc.b	 $06
+	smpsPSGAlterVol     $01
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06
+	smpsPSGAlterVol     $02
+	dc.b	 $06
+	smpsPSGAlterVol     $FF
+	dc.b	 $06
+	smpsPSGvoice        sTone_12
+	smpsPSGAlterVol     $02
+	dc.b	 $0C
+	smpsPSGAlterVol     $FE
+	dc.b	 $0C
+	smpsPSGAlterVol     $FF
+	dc.b	 $18
+	smpsPSGAlterVol     $01
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $0C
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $06,  $06,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $18
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $18
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $0C
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $06,  $06,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $1E
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $1E
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $0C
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $06,  $06,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $18
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $18
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $0C, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $12
+	dc.b	 $06,  $0C,  $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $06,  $06,  $12
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $12
+	dc.b	 $0C
+	smpsPSGvoice        sTone_0F
+	smpsPSGAlterVol     $02
+	dc.b	 $06,  $0C,  $0C
+	smpsPSGvoice        sTone_12
+	smpsPSGAlterVol     $FE
+	dc.b	 $12
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $04
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FD
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C
+	dc.b	 $06,  $0C
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $03
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FD
-	dc.b	nMaxPSG, $0C, nMaxPSG, $18, nMaxPSG, $0C
+	dc.b	 $0C,  $18,  $0C
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06,  $06,  $06
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $02
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06, nMaxPSG, $0C
+	dc.b	 $06,  $0C
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $06, nMaxPSG, $06
+	dc.b	 $06,  $06
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $06
+	dc.b	 $06
 	smpsPSGAlterVol     $03
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FD
-	dc.b	nMaxPSG, $0C, nMaxPSG, $18
+	dc.b	 $0C,  $18
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $12, nMaxPSG, $1E, nMaxPSG, $12, nMaxPSG, $1E, nMaxPSG, $12, nMaxPSG, $1E
-	dc.b	nMaxPSG, $12, nMaxPSG, $12, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $12,  $1E,  $12,  $1E,  $12,  $1E
+	dc.b	 $12,  $12,  $0C,  $0C
 	smpsPSGAlterVol     $FF
-	dc.b	nMaxPSG, $0C, nMaxPSG, $0C, nMaxPSG, $0C
+	dc.b	 $0C,  $0C,  $0C
 	smpsPSGvoice        sTone_0F
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_12
 	smpsPSGAlterVol     $01
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGvoice        sTone_0F
 	smpsPSGAlterVol     $03
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FE
-	dc.b	nMaxPSG, $0C
+	dc.b	 $0C
 	smpsPSGAlterVol     $FF
 	smpsPSGvoice        sTone_12
 	smpsJump	Snd_Knuckles_SS_SADC_PSG3
